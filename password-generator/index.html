@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="psw-container">
+        <div class="psw-header">
+            <input id="output" type="text">
+            <button id="small-btn">Copy</button>
+        </div>
+        <div class="psw-body">
+            <div class="form-control"><label for="upper">Contain Uppercase Letter</label><input id="upper"
+                    type="checkbox"></div>
+            <div class="form-control"><label for="length">Password Length</label><input id="length" value="20"
+                    type="number" min="6" max="40">
+            </div>
+            <div class="form-control"><label for="lower">Contain Lower Case Letters</label><input id="lower"
+                    type="checkbox"></div>
+            <div class="form-control"><label for="number">Contain Numbers</label><input id="number" type="checkbox">
+            </div>
+            <div class="form-control"><label for="symbol">Contain Symbols</label><input id="symbol" type="checkbox">
+            </div>
+            <button id="generatePsw">Generate Password</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
