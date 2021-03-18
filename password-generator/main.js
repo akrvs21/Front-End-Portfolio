@@ -47,30 +47,42 @@ genEl.addEventListener("click", () => {
 });
 //Generate Password Function
 function generatePassword(upper, lower, number, symbol, length) {
-  let generatedPassword = "";
-
-  const typesCount = upper + lower + number + symbol;
-
-  //console.log(typesCount);
-
-  const typesArr = [{ upper }, { lower }, { number }, { symbol }].filter(
-    (item) => Object.values(item)[0]
-  );
-
-  if (typesCount === 0) {
-    return "";
-  }
-
-  for (let i = 0; i < length; i += typesCount) {
-    typesArr.forEach((type) => {
-      const funcName = Object.keys(type)[0];
-      generatedPassword += randomFunc[funcName]();
+  console.log(lengthEl.value.length);
+  if (lengthEl.value < 6) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "The minimum password length should be 8",
+      footer:
+        "<a target='_blank' rel='noopener noreferrer' href='//www.sciencedirect.com/topics/computer-science/character-password#:~:text=6.1.&text=Passwords%20should%20be%20a%20minimum,%2C%20numbers%2C%20and%20special%20characters.&text=As%20the%20key%20space%20increases,attack%20on%20a%20password%20increases.'>Why do I have this issue?</a>",
     });
-  }
+    return "";
+  } else {
+    let generatedPassword = "";
 
-  const finalPassword = generatedPassword.slice(0, length);
-  console.log(finalPassword);
-  return finalPassword;
+    const typesCount = upper + lower + number + symbol;
+
+    //console.log(typesCount);
+
+    const typesArr = [{ upper }, { lower }, { number }, { symbol }].filter(
+      (item) => Object.values(item)[0]
+    );
+
+    if (typesCount === 0) {
+      return "";
+    }
+
+    for (let i = 0; i < length; i += typesCount) {
+      typesArr.forEach((type) => {
+        const funcName = Object.keys(type)[0];
+        generatedPassword += randomFunc[funcName]();
+      });
+    }
+
+    const finalPassword = generatedPassword.slice(0, length);
+    //   console.log(finalPassword);
+    return finalPassword;
+  }
 }
 
 smallBtnEl.addEventListener("click", function () {
@@ -88,5 +100,5 @@ smallBtnEl.addEventListener("click", function () {
   });
 });
 
-console.log(getRandomUpperCase());
-console.log(getRandomLowerCase());
+// console.log(getRandomUpperCase());
+// console.log(getRandomLowerCase());

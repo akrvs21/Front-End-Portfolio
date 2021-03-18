@@ -5,6 +5,29 @@
   padding: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+input[type="checkbox"]:checked {
+  background: rgb(241, 222, 113);
+}
+
 button {
   border-radius: 12px;
   background: none;
@@ -74,8 +97,8 @@ body {
 
 .psw-body div:nth-child(2) input {
   width: 30px;
-  font-size: 1rem;
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
+  font-size: 1.2rem;
+  /* -webkit-appearance: none;
+  -moz-appearance: textfield; */
   margin: 0;
 }
