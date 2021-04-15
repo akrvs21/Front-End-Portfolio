@@ -1,0 +1,26 @@
+1) Website prototype: AdobeX design
+2) Design consepciya
+3) Write a code
+4) Make it public and test
+5) prodvijenie i SEO
+6) 
+
+                        PAGE HIERARCHY
+    1. Main Page
+    2. Services
+        2.1 Otkritie IP
+        2.2 Okleika Avto
+        2.3 Brendirovanie Sitimobil
+        2.4 Brendirovanie Yandex Taxi
+        2.5 Taxi Licence
+        2.6 Podkluchenie k zakazam
+    3. Soprovojdenie
+        3.1 Soprovoditelnie docs
+        3.2 Predreisovi osmotr
+        3.3 Diagnostic Card
+        3.4 Blanki Strogoi Otchetnosti
+        3.5 Kartochka Frahtovshika
+        3.6 Pravila Perevozki
+        3.7 Dogovori Arendi TC
+    4. Contacts
+
