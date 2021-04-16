@@ -449,7 +449,7 @@ $(document).ready(function () {
   var tween = new TimelineMax()
 
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.8, {
         css: {
           bezier: carpath.road1,
           display: "block",
@@ -458,7 +458,7 @@ $(document).ready(function () {
       })
     )
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.5, {
         css: {
           bezier: carpath.point1,
         },
@@ -470,7 +470,7 @@ $(document).ready(function () {
     )
 
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.8, {
         css: {
           bezier: carpath.road2,
           display: "block",
@@ -479,7 +479,7 @@ $(document).ready(function () {
       })
     )
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.5, {
         css: {
           bezier: carpath.point2,
         },
@@ -491,7 +491,7 @@ $(document).ready(function () {
     )
 
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.8, {
         css: {
           bezier: carpath.road3,
           display: "block",
@@ -500,7 +500,7 @@ $(document).ready(function () {
       })
     )
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.5, {
         css: {
           bezier: carpath.point3,
         },
@@ -512,7 +512,7 @@ $(document).ready(function () {
     )
 
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.8, {
         css: {
           bezier: carpath.road4,
           display: "block",
@@ -521,7 +521,7 @@ $(document).ready(function () {
       })
     )
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.5, {
         css: {
           bezier: carpath.point4,
         },
@@ -533,7 +533,7 @@ $(document).ready(function () {
     )
 
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.8, {
         css: {
           bezier: carpath.road5,
           display: "block",
@@ -542,7 +542,7 @@ $(document).ready(function () {
       })
     )
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.5, {
         css: {
           bezier: carpath.point5,
         },
@@ -554,7 +554,7 @@ $(document).ready(function () {
     )
 
     .add(
-      TweenMax.to($(".car"), 1, {
+      TweenMax.to($(".car"), 0.8, {
         css: {
           bezier: carpath.road6,
           display: "none",

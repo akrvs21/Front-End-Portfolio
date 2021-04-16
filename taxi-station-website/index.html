@@ -10,23 +10,34 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="./anim.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-    <!-- Navigor -->
     <div class="topnav">
         <img src="./assets/logo.jpg" alt="taxi-logo">
-        <ul>
+        <ul class="navbar">
             <button> x </button>
             <li>
                 <a href="#">Наши сервисы</a>
+                <ul style="height: 20vh; width: 18vw;" class="dropdown">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">Iconography</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">Сопровождение</a>
+                <ul style="height: 20vh; width: 18vw;" class="dropdown">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">Iconography</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">Контакты</a>
@@ -43,33 +54,6 @@
             <img src="./assets/banner2.jpg" alt="">
             <img src="./assets/banner3.jpg" alt="">
         </div>
-        <!-- <div class="carousel">
-            <button class="carousel__button carousel__button--left">
-                <img src="./assets/left.png" alt="">
-            </button>
-            <div class="carousel__track-container">
-                <ul class="carousel__track">
-                    <li class="carousel__slide current-slide">
-                        <img class="carousel__image" src="./assets/taxi.png" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="./assets/taxi1.png" alt="">
-                    </li>
-                    <li class="carousel__slide">
-                        <img class="carousel__image" src="./assets/taxi2.jpg" alt="">
-                    </li>
-                </ul>
-            </div>
-            <button class="carousel__button carousel__button--right">
-                <img src="./assets/right.png" alt="">
-            </button>
-
-            <div class="carousel__nav">
-                <button class="carousel__indicator current__slide"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-            </div>
-        </div> -->
     </section>
     <!-- End of Hero section -->
 
@@ -140,7 +124,13 @@
 
     <!-- Steps section -->
     <section class="steps">
-        <!-- Modal -->
+        <div class="section-header">
+            <h1 class="section-heading">Описание процесса
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <h2 style="margin: 0 96px 0 200px;"><span>С Т </span><span>А Р Т</span></h2>
+        <img class="arrow" src="./assets/arrow.png" alt="arrow">
         <section class="road">
             <div class="container">
                 <div class="row">
@@ -159,7 +149,7 @@
                         </div>
                         <div class="date">
                             <img src="./assets/finish.jpg" alt="">
-                            <h1> <strong>ФИНИШ</strong> </h1>
+                            <h2><span>Ф И Н </span><span> И Ш</span></h2>
                         </div>
                         <div id="trigger"></div>
                         <div class="point1">
@@ -238,28 +228,105 @@
                 </div>
             </div>
         </section>
-
-
     </section>
     <!-- End of Steps section -->
 
-    <!-- About section -->
-    <section class="about">
-
+    <!-- Team seaction -->
+    <section class="team">
+        <div class="section-header">
+            <h1 class="section-heading">Наша Команда</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="team-members">
+            <div class="team-member" data-tilt>
+                <div class="team-image-wrapper">
+                    <img src="./assets/ceo.jpg" alt="">
+                </div>
+                <div class="member-info">
+                    <h1>И.Ф.О</h1>
+                    <h2>Должность</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, deserunt.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="team-member" data-tilt>
+                <div class="team-image-wrapper">
+                    <img src="./assets/designer.jpg" alt="">
+                </div>
+                <div class="member-info">
+                    <h1>И.Ф.О</h1>
+                    <h2>Должность</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, deserunt.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="team-member" data-tilt>
+                <div class="team-image-wrapper">
+                    <img src="./assets/architect.jpg" alt="">
+                </div>
+                <div class="member-info">
+                    <h1>И.Ф.О</h1>
+                    <h2>Должность</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, deserunt.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- End of About section -->
+    <!-- End of Team section -->
 
-    <!-- Contacts section -->
-    <section class="contacts">
+    <!-- Contact section -->
+    <section class="contact">
+        <div class="wrapper-form">
+            <div class="contact-left">
+                <svg id="mySvg">
+                    <clippath id="clip">
+                        <circle cx="-20" cy="-20" r="80" class="a" />
+                    </clippath>
 
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" class="one" />
+
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" clip-path="url(#clip)" />
+                </svg>
+            </div>
+            <div class="contact-right">
+                <h1 class="contact-heading">Свяжитесь с нами</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="field" id="name">
+                        <label for="name" class="input-label">Ваше Имя</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id="number">
+                        <label for="number" class="input-label">Ваш Телефон</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="field" id="message" placeholder="Сообщение"></textarea>
+                        <label for="message" class="message"></label>
+                    </div>
+                    <input type="submit" class="submit-btn" value="Отправить" />
+                </form>
+            </div>
+        </div>
     </section>
-    <!-- End of Contacts section -->
+    <!-- End of Contact section -->
 
     <!-- Footer section -->
-    <section class="footer">
-
-    </section>
+    <footer>
+        <div class="footer-wrap">
+            <p>Copyright &copy; 2021 </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
     <!-- End of Footer section -->
+    </div>
+    <button class="scroll-btn">
+        <h3>&#10595;</h3>
+    </button>
 </body>
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
