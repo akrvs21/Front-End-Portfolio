@@ -891,8 +891,7 @@
 
 .road {
   height: 2577px;
-  background: url(http://www.threepeakszero.com/new2/img/road-bg.jpg) center top
-    no-repeat;
+  background: url(./assets/road.jpg) center top no-repeat;
 }
 .road .car {
   position: absolute;
@@ -1045,7 +1044,7 @@ ad h3 div {
 .road .why,
 .road .how,
 .road .when,
-.road .date {
+.road .date {f
   width: 555px;
   position: absolute;
   top: 100px;
@@ -1067,7 +1066,7 @@ ad h3 div {
 }
 .road .date {
   width: 400px;
-  left: auto;
+  /* left: auto; */
   right: 45px;
-  top: 2100px;
+  top: 2060px;
 }

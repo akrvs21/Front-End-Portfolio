@@ -1,3 +1,17 @@
+var navbar = document.querySelector(".topnav");
+var paint = false;
+window.onscroll = function () {
+  navbar.style.opacity = "0.5";
+  if (!window.pageYOffset) navbar.style.opacity = "1";
+};
+
+navbar.onmouseover = function () {
+  navbar.style.opacity = "1";
+};
+navbar.onmouseout = function () {
+  if (window.pageYOffset) navbar.style.opacity = "0.5";
+};
+
 $(document).ready(function () {
   // Tabs - end
 
@@ -590,6 +604,8 @@ $(document).ready(function () {
 
   function popoverHide2() {
     $(".popover2").css("display", "none");
+    paint = !paint;
+    console.log("fire");
   }
 
   function popoverShow3() {
@@ -623,15 +639,11 @@ var lastScrollTop = 0;
 $(window).scroll(function (event) {
   var st = $(this).scrollTop();
   if (st > lastScrollTop) {
-    $(".car").attr(
-      "src",
-      "http://www.threepeakszero.com/new2/img/car-right.png"
-    );
+    if (paint) $(".car").attr("src", "./assets/taxi-right.png");
+    else $(".car").attr("src", "./assets/car-right.png");
   } else {
-    $(".car").attr(
-      "src",
-      "http://www.threepeakszero.com/new2/img/car-left.png"
-    );
+    if (paint) $(".car").attr("src", "./assets/taxi-left.png");
+    else $(".car").attr("src", "./assets/car-left.png");
   }
   lastScrollTop = st;
 });

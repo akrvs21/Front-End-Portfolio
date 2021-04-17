@@ -29,7 +29,12 @@ ul {
 .topnav {
   background-color: #000;
   font-size: 3vh;
-  position: relative;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+}
+.topnav:hover {
+  opacity: 1;
 }
 .topnav ul {
   width: 100vw;
@@ -53,6 +58,7 @@ ul {
   position: relative;
   perspective: 100rem;
   overflow: hidden;
+  margin-top: 10vh;
 }
 .carousel {
   width: 100%;
@@ -275,7 +281,7 @@ ul {
   position: absolute;
   top: 31rem;
   width: 15vw;
-  height: 10vh;
+  height: 13vh;
   animation-name: arrowAnim;
   animation-iteration-count: infinite;
   animation-duration: 1s;
@@ -545,8 +551,11 @@ footer {
 }
 
 /* Drop down Menu */
-.dropdown {
+.topnav .dropdown {
   padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20vh;
 }
 
 .dropdown li {
