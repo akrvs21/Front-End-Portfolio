@@ -21,7 +21,7 @@ button {
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  padding: 2vw;
+  /* padding: 2vw; */
   /* font-family: monospace; */
 }
 ul {
@@ -31,6 +31,7 @@ ul {
 .topnav li {
   list-style-type: none;
   margin: 0 2vw;
+  padding: 2vh;
 }
 
 .topnav {
@@ -71,7 +72,7 @@ ul {
   transition-duration: 0.5s;
   background-color: #d3a136;
   margin: 0;
-  padding: 5px;
+  padding: 16px;
 }
 
 .dropdown li:hover {
@@ -88,7 +89,9 @@ ul {
   display: none;
   z-index: 100;
 }
-
+/* .navbar li {
+  height: 100%;
+} */
 .topnav ul li:hover > ul,
 .topnav ul li ul:hover {
   visibility: visible;
@@ -389,7 +392,7 @@ ul {
 }
 .contact-heading {
   font-family: "Baloo Da 2", cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 300;
   color: #272727;
   margin-bottom: 5rem;
@@ -493,7 +496,7 @@ ul {
   font-size: 43px;
   width: 14rem;
   height: 9rem;
-  top: 600px;
+  top: 610px;
   left: 10%;
   animation-name: pulsing-btn;
   animation-duration: 1.3s;
@@ -662,4 +665,49 @@ footer {
   100% {
     transform: scale(1);
   }
+}
+
+/* Second page */
+.carousel .title {
+  position: absolute;
+  border-radius: 0 40%;
+  padding: 20px;
+  top: 20%;
+  left: 50%;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  background-color: #ffcb00;
+  color: #000;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  /* z-index: 9999; */
+}
+
+.carousel p {
+  position: absolute;
+  letter-spacing: 3px;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+}
+
+.carousel button#free {
+  position: absolute;
+  top: 45%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  background-color: #d33b36;
+  /* background-color: #d3a136; */
+  color: #fff;
+  font-family: "Mulish", serif;
+  padding: 25px;
+  border-radius: 20%;
+  animation-name: pulsing-btn;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  letter-spacing: 8px;
 }

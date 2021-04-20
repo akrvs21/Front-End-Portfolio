@@ -1,0 +1,223 @@
+.wrapper {
+  width: 1200px;
+  position: relative;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 0 0 25px 25px;
+}
+
+.wrapper h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+.wrapper p {
+  flex: 4;
+  font-size: 2rem;
+  width: 700px;
+  line-height: 1.7;
+}
+.wrapper img,
+.product img {
+  flex: 1;
+  width: 100px;
+  height: 70%;
+}
+.wrapper span {
+  flex: 4;
+  font-size: 2rem;
+  width: 4rem;
+  height: 100%;
+  background-color: #d3a136;
+  padding: 10px;
+  text-align: center;
+  margin-right: 30px;
+}
+.inner-wrapper {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.process-items {
+  display: flex;
+  width: 900px;
+  height: 30vh;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.process-item {
+  background-color: #fff;
+  padding: 35px;
+  width: 25%;
+  height: 100%;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 0px 0px 10px 0px rgba(20, 18, 18, 0.3);
+}
+.process-item img {
+  position: relative;
+  left: 20%;
+}
+.process-items p {
+  width: 100%;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+/* .steps h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+}
+.steps-wrapper .single-step {
+  width: 350px;
+  background-color: pink;
+} */
+.single-step img {
+  width: 20%;
+  float: left;
+}
+.single-step {
+  height: 150px;
+}
+.single-step h3 {
+  font-size: 1.5rem;
+}
+.single-step h3 p {
+  font-size: 19px;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* copy */
+.lc-features__item {
+  width: 24.5%;
+  height: 40%;
+  position: relative;
+  padding: 15px;
+  display: inline-block;
+}
+
+.service_turbo-lpc .lc-page {
+  line-height: normal;
+}
+.lc-page {
+  font-size: 16px;
+  line-height: 24px;
+}
+.service_turbo-lpc {
+  --link-color: #018ad2;
+  font-family: YS Text, Helvetica, Arial, sans-serif;
+}
+.lc-features__item-wrap_feature-back.lc-features__item-wrap_border-round {
+  border-radius: 12px;
+}
+.lc-features__item-wrap_feature-back,
+.lc-features__item-wrap_feature-back .lc-features__item-wrap_feature-back {
+  padding: 18px;
+}
+
+.lc-features__item-wrap {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 45vh;
+  border: 0 solid transparent;
+}
+.service_turbo-lpc .lc-page {
+  line-height: normal;
+}
+.lc-page {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.lc-features__spacer-wrapper {
+  position: relative;
+  font-size: 2rem;
+}
+
+.service_turbo-lpc .lc-page {
+  line-height: normal;
+}
+
+.lc-features_inited .lc-features__call-to-action,
+.lc-features_inited .lc-features__description,
+.lc-features_inited .lc-features__image,
+.lc-features_inited .lc-features__title {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.lc-features__spacer img {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  margin-top: 25px;
+}
+.steps button {
+  padding: 10px;
+  background-color: gold;
+  /* border-radius: 20%; */
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/* .lc-features__item .heading {
+  margin: 0 auto;
+  font-size: 8rem;
+} */
+
+/* Product section */
+.product {
+  background-color: #f0f0f0;
+  width: 100vw;
+}
+.stamps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stamps h3 {
+  font-size: 3rem;
+  padding: 20px;
+  background-color: #043464;
+  font-weight: lighter;
+  font-family: "Baskervville", serif;
+  letter-spacing: 1.5px;
+  /* background-color: rgb(240, 96, 120); */
+  color: #fff;
+  border-radius: 25px;
+  margin: 50px 0 20px 0;
+}
+.stamps p:nth-child(2) {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.process-items p {
+  padding: 7px;
+  font-size: 2rem;
+}
+.product .process-item {
+  width: 15%;
+}
+/* End of Product section */

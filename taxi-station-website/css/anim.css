@@ -903,8 +903,9 @@
 .road .point3,
 .road .point4,
 .road .point5 {
-  width: 30px;
-  height: 30px;
+  width: fit-content;
+  height: 80px;
+  width: -moz-fit-content;
   background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 400px;
@@ -931,8 +932,10 @@
 .road .point5 .popover3,
 .road .point5 .popover4,
 .road .point5 .popover5 {
-  width: 160px;
-  height: 200px;
+  width: 190px;
+  /* height: 250px; */
+  /* width: -moz-fit-content; */
+  /* padding: 12px; */
   background: #e9e9e9;
   display: none;
   position: relative;
@@ -964,8 +967,10 @@
   padding: 10px;
   background: #2c2c2c;
   color: #fff;
-  font-size: 11px;
-  border-topleft-radius: 5px;
+  font-size: 15px;
+  font-family: "Zen Dots", cursive;
+  letter-spacing: 0.3px;
+  border-top-left-radius: 5px;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
   -moz-border-radius-topleft: 5px;
@@ -973,7 +978,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.road .point1 .popover1 .bottom-section,
+/* .road .point1 .popover1 .bottom-section,
 .road .point2 .popover1 .bottom-section,
 .road .point1 .popover2 .bottom-section,
 .road .point2 .popover2 .bottom-section .road .point3 .popover1 .bottom-section,
@@ -989,7 +994,26 @@
 .road .point5 .popover4 .bottom-section,
 .road .point5 .popover5 .bottom-section {
   padding: 10px;
-  font-size: 11px;
+  font-size: 13px;
+} */
+.bottom-section {
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  line-height: 19px;
+  color: rgb(85, 11, 182);
+}
+.bottom-section ~ button {
+  padding: 10px;
+  background-color: gold;
+  /* border-radius: 20%; */
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.bottom-section ~ button:hover {
+  background-color: rgb(184, 166, 64);
+  transition: background-color 1s;
 }
 .road .point1 {
   top: 400px;
@@ -1044,7 +1068,7 @@ ad h3 div {
 .road .why,
 .road .how,
 .road .when,
-.road .date {f
+.road .date {
   width: 555px;
   position: absolute;
   top: 100px;
