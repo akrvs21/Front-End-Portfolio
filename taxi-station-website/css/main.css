@@ -30,7 +30,7 @@ ul {
 /* Navigation */
 .topnav li {
   list-style-type: none;
-  margin: 0 2vw;
+  margin: 0 4vw;
   padding: 2vh;
 }
 
@@ -190,7 +190,7 @@ ul {
 .service-header {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .service-header i {
   font-size: 4rem;
@@ -198,11 +198,11 @@ ul {
   margin-right: 2rem;
 }
 .service-header h3 {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "DM Serif Display", serif;
 
   font-size: 2.6rem;
   line-height: 2.6rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 2rem;
 }
 .service-text {
