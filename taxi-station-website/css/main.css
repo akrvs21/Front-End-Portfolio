@@ -36,6 +36,11 @@ ul {
 
 .topnav {
   background-color: #000;
+  /* background: linear-gradient(
+    45deg,
+    rgba(45, 45, 45, 1) 9%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
   font-size: 3vh;
   position: fixed;
   z-index: 9999;
@@ -53,7 +58,7 @@ ul {
 }
 .topnav img {
   position: absolute;
-  width: 9vh;
+  width: 19vh;
 }
 .topnav button {
   display: none;
@@ -116,11 +121,32 @@ ul {
   overflow: hidden;
   margin-top: 10vh;
 }
+.hero-text {
+  position: absolute;
+  z-index: 9999;
+  top: 35%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 72px;
+  color: rgba(255, 255, 255, 0.753);
+  font-family: "Zen Dots", cursive;
+  padding: 30px;
+}
 .carousel {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
+}
+.hero-image {
+  height: 100vh;
+  /* width: 100vw; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.5;
 }
 .carousel img {
   width: 100%;
@@ -172,11 +198,12 @@ ul {
   margin-right: 2rem;
 }
 .service-header h3 {
-  font-family: "Baloo Da 2", cursive;
+  font-family: "IBM Plex Serif", serif;
+
   font-size: 2.6rem;
   line-height: 2.6rem;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .service-text {
   font-family: "Josefin Slab", serif;
@@ -315,7 +342,8 @@ ul {
   bottom: 2rem;
 }
 .member-info h1 {
-  font-family: "Baloo Da 2", cursive;
+  font-family: "IBM Plex Serif", serif;
+
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-weight: 300;
@@ -329,7 +357,8 @@ ul {
   margin-bottom: 1rem;
 }
 .member-info p {
-  font-family: "Baloo Da 2", cursive;
+  font-family: "IBM Plex Serif", serif;
+
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 100;
@@ -342,7 +371,8 @@ ul {
   height: 3rem;
   background-color: #d3a136;
   border: none;
-  font-family: "Baloo Da 2", cursive;
+  font-family: "IBM Plex Serif", serif;
+
   line-height: 1.5rem;
   color: #eee;
   border-radius: 0.3rem;
@@ -391,7 +421,8 @@ ul {
   padding: 3rem 10rem 10rem 10rem;
 }
 .contact-heading {
-  font-family: "Baloo Da 2", cursive;
+  font-family: "IBM Plex Serif", serif;
+
   font-size: 4rem;
   font-weight: 300;
   color: #272727;
@@ -438,7 +469,8 @@ ul {
 .input-group label {
   position: absolute;
   left: 0;
-  font-family: "Baloo Da 2", cursive;
+  font-family: "IBM Plex Serif", serif;
+
   font-size: 1.8rem;
   color: #4b4b4b;
   text-transform: uppercase;
@@ -710,4 +742,97 @@ footer {
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   letter-spacing: 8px;
+}
+
+/* dsfjka */
+
+.topnav h1 {
+  font-family: "CoreCircus", sans-serif;
+  font-size: 3.5vw;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #fff;
+  /* font-weight: 500; */
+  /* background-color: rgb(226, 226, 226); */
+  letter-spacing: -0.5rem;
+}
+.topnav h1:before {
+  content: attr(data-heading);
+  position: absolute;
+  overflow: hidden;
+  color: #ffcc00;
+  width: 100%;
+  z-index: 5;
+  text-shadow: none;
+  left: 42%;
+  text-align: left;
+  animation: flicker 3s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+    text-shadow: -1px -1px 0 rgba(#fff, 0.4), 1px -1px 0 rgba(#fff, 0.4),
+      -1px 1px 0 rgba(#fff, 0.4), 1px 1px 0 rgba(#fff, 0.4), 0 -2px 8px, 0 0 2px,
+      0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+/*
+ * Webfont: CoreCircus by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*
+ * Webfont: CoreCircus2DDot1 by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*/
+
+@font-face {
+  font-family: "CoreCircus2DDot1";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2")
+      format("woff2"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff")
+      format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "CoreCircus";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2")
+      format("woff2"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff")
+      format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf")
+      format("truetype");
 }
