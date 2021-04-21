@@ -639,11 +639,11 @@ var lastScrollTop = 0;
 $(window).scroll(function (event) {
   var st = $(this).scrollTop();
   if (st > lastScrollTop) {
-    if (paint) $(".car").attr("src", "../assets/taxi-right.png");
-    else $(".car").attr("src", "../assets/car-right.png");
+    if (paint) $(".car").attr("src", "./assets/taxi-right.png");
+    else $(".car").attr("src", "./assets/car-right.png");
   } else {
-    if (paint) $(".car").attr("src", "../assets/taxi-left.png");
-    else $(".car").attr("src", "../assets/car-left.png");
+    if (paint) $(".car").attr("src", "./assets/taxi-left.png");
+    else $(".car").attr("src", "./assets/car-left.png");
   }
   lastScrollTop = st;
 });
