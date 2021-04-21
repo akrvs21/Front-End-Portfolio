@@ -1,0 +1,74 @@
+.left-car {
+  position: absolute;
+  left: -346.5px;
+  top: 297px;
+  width: 1060px;
+  display: table;
+}
+.right-car {
+  left: 794.5px;
+  top: 290px;
+  width: 1100px;
+  position: absolute;
+  box-sizing: border-box;
+  display: table;
+}
+.car-wrapper {
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.car-wrapper img {
+  width: 100%;
+  display: block;
+  box-sizing: content-box;
+  opacity: 1;
+}
+.branding h2 {
+  position: absolute;
+  font-weight: 900;
+  font-family: "Mulish", serif;
+  font-size: 5rem;
+  color: #000;
+  left: 50%;
+  top: 12%;
+  transform: translate(-50%, -50%);
+}
+.branding h3 {
+  position: absolute;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #000;
+  left: 50%;
+  top: 23%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(225, 176, 153, 0.8);
+  padding: 5px;
+  border-radius: 25px;
+  text-align: center;
+  color: rgb(10, 9, 8);
+}
+.branding .process-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.branding p {
+  color: goldenrod;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+}
+.branding .process-item {
+  width: 15%;
+}
+.branding span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+}
