@@ -17,12 +17,27 @@ $(".js-tilt").tilt({
   scale: 1.2,
 });
 
-$("svg").on("mousemove", function (e) {
+$("#mySvg").on("mousemove", function (e) {
+  console.log("check svg");
   var x = e.pageX - $("#mySvg").offset().left;
   var y = e.pageY - $("#mySvg").offset().top;
   // console.log(x);
   // console.log(y);
   $(".a").attr("cx", x).attr("cy", y);
+});
+
+$("#carSvg").on("mousemove", function (e) {
+  console.log("check carSvg");
+  var x = e.pageX - $("#carSvg").offset().left;
+  var y = e.pageY - $("#carSvg").offset().top;
+  console.log("x is", x);
+  // console.log("y is", y);
+  $(".car-rect").attr("width", 200).attr("height", 1000);
+  $(".car-rect").attr("x", x).attr("y", 0);
+});
+
+$("#carSvg").on("mouseleave", function (e) {
+  $(".car-rect").attr("width", 0).attr("height", 0);
 });
 
 document.querySelector(".scroll-btn").addEventListener("click", () => {

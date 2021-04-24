@@ -23,7 +23,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Serif:wght@300&family=Zen+Dots&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/anim.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prata&family=Russo+One&family=Ubuntu+Condensed&family=Viaoda+Libre&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/anim.css"> -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -39,9 +44,9 @@
             <li class="navigation">
                 <a href="#">Наши сервисы</a>
                 <ul class="dropdown">
-                    <li><a href="./sec.html">Открытие ИП</a></li>
+                    <li><a href="./ip.html">Открытие ИП</a></li>
                     <li><a href="#">Оклейка авто</a></li>
-                    <li><a href="./siti.html">Брендирование Ситимобил</a></li>
+                    <li><a href="./sitimobil.html">Брендирование Ситимобил</a></li>
                     <li><a href="#">Брендирование Яндекс Такси</a></li>
                     <li><a href="#">Лицензия на такси</a></li>
                     <li><a href="#">Подключение к заказам</a></li>
@@ -167,6 +172,117 @@
             </h1>
             <div class="underline"></div>
         </div>
+
+        <div id="info">
+            <div class="row">
+                <li class="progress-item active">ШАГ 1</li>
+                <div class="card">
+                    <h2>Открытие ИП</h2>
+                    <p>В начале офорляется ИП, это необходимо для дальнейшего получения лицензии на такси.</p>
+                    <img class="main-img" src="./assets/ip.jpg" alt="">
+                    <div class="block-reveal-cont">
+                        <h1 class="block-effect" style="--td: 1.2s">
+                            <div class="block-reveal" style="--bc: #4040bf; --d: .1s">Какие Документы</div>
+                            <div class="block-reveal" style="--bc: #bf4060; --d: .5s">подготовить?</div>
+                        </h1>
+                    </div>
+                    <div class="docs">
+                        <label for="1">ПАСПОРТ</label>
+                        <img id="1" src="./assets/passport.jpg" alt="">
+                        <label for="2">СНИЛС</label>
+                        <img id="2" src="./assets/snils.png" alt="">
+                        <label for="3">ИНН</label>
+                        <img id="3" src="./assets/inn.png" alt="">
+                    </div>
+                </div>
+
+                <div style="height: 15px; width: 100%; background-color: #fff; "></div>
+
+                <li class="progress-item">ШАГ 2</li>
+                <div class="card">
+                    <h2>Оклейка <br />
+                        автомобиля</h2>
+                    <p>Пока обрабатывается ваша заявка на открытие ИП, вам необходимо оклеить свой автомобиль под такси.
+                    </p>
+                    <svg id="carSvg" class="car-anim-container">
+                        <clippath id="car-clip">
+                            <rect x="0" y="0" width="0" height="0" class="car-rect" />
+                        </clippath>
+                        <image preserveAspectRatio="xMidYMin slice" href="./assets/new2-red.png" class="top-car" />
+                        <image preserveAspectRatio="xMidYMin slice" href="./assets/new2.png"
+                            clip-path="url(#car-clip)" />
+                    </svg>
+                </div>
+
+                <div style="height: 15px; width: 100%; background-color: #fff; "></div>
+
+                <li class="progress-item">ШАГ 3</li>
+                <div class="card">
+                    <h2>Оформление
+                        лицензии</h2>
+                    <p>После оклейки автомобиля и внесения изменений о новой цветовой гамме в СТС, вы смело можете
+                        приступать к оформлению
+                        лицензии на такси.</p>
+                    <img class="main-img" src="./assets/license.jpg" alt="">
+                    <div class="block-reveal-cont">
+                        <h1 class="block-effect" style="--td: 1.2s">
+                            <div class="block-reveal" style="--bc: #4040bf; --d: .1s">Какие Документы</div>
+                            <div class="block-reveal" style="--bc: #bf4060; --d: .5s">подготовить?</div>
+                        </h1>
+                    </div>
+                    <div class="docs">
+                        <label for="1">ПАСПОРТ</label>
+                        <img id="1" src="./assets/passport.jpg" alt="">
+                        <label for="2">СНИЛС</label>
+                        <img id="2" src="./assets/sts.png" alt="">
+                        <label for="3">ИНН</label>
+                        <img id="3" src="./assets/ip.jpg" alt="">
+                    </div>
+                </div>
+
+                <div style="height: 15px; width: 100%; background-color: #fff; "></div>
+
+                <li class="progress-item">ШАГ 4</li>
+                <div class="card">
+                    <h2>Сопроводительные
+                        документы</h2>
+                    <p>Для работы в такси есть перечень необходимых сопроводительных документов. Их отсутствие влечет за
+                        собой штрафы в размере
+                        до 100 000 руб.
+                        Вы также можете приобрести их у нас.</p>
+                    <img class="block-reveal-cont" style="width: 520px;;" src="./assets/kolaj.png" alt="">
+                </div>
+
+                <div style="height: 15px; width: 100%; background-color: #fff; "></div>
+
+                <li class="progress-item">ШАГ 5</li>
+                <div class="card">
+                    <h2>Подключение
+                        к заказам</h2>
+                    <p>Чтобы обеспечить себе стабильный доход, подключайтесь к самым крупным агрегаторам России, таким
+                        как Ситимобил, Яндекс
+                        Такси, Gett и многим другим.
+                    </p>
+                    <!-- <img src="./assets/siti.jpg" class="main-img" alt="">
+                    <img src="./assets/siti.png" class="main-img" alt=""> -->
+                    <img src="./assets/siti.png" style="left: 180%;" class="main-img" alt="">
+                    <img src="./assets/yandex.png" style="left: 320%;" class="main-img" alt="">
+                    <img src="./assets/get2.png" style="left: 455%; background-color: black;" class="main-img" alt="">
+                </div>
+
+                <div style="height: 15px; width: 100%; background-color: #fff; "></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Steps section -->
+    <!-- Steps section -->
+    <!-- <section class="steps">
+        <div class="section-header">
+            <h1 class="section-heading">Описание процесса
+            </h1>
+            <div class="underline"></div>
+        </div>
         <h2 style="margin: 0 96px 0 200px;"><span>С Т </span><span>А Р Т</span></h2>
         <img class="arrow" src="./assets/arrow.png" alt="arrow">
         <section class="road">
@@ -271,7 +387,7 @@
                 </div>
             </div>
         </section>
-    </section>
+    </section> -->
     <!-- End of Steps section -->
 
     <!-- Team seaction -->
@@ -353,6 +469,8 @@
         </div>
     </section>
     <!-- End of Contact section -->
+
+    <!-- Bot section -->
     <div class="bot">
         <p class="bot-text">
             Либо, <br>
@@ -365,6 +483,8 @@
         <button>БОТ</button>
         <img src="./assets/bot.jpg" alt="">
     </div>
+    <!-- End of Bot section -->
+
     <!-- Footer section -->
     <footer>
         <div class="footer-wrap">
@@ -378,9 +498,12 @@
     </footer>
     <!-- End of Footer section -->
     </div>
+
+    <!-- Scroll Up button -->
     <button class="scroll-btn">
         <h3>&#10595;</h3>
     </button>
+    <!-- End of Scroll Up button -->
 </body>
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
@@ -392,7 +515,7 @@
 <script src="./libs/debug.addInticators.min.js"></script>
 <script type="text/javascript" src="libs/slick/slick.min.js"></script>
 <script src="libs/tilt.js"></script>
-<script src="./js/anim.js"></script>
+<!-- <script src="./js/anim.js"></script> -->
 <script src="./js/main.js"></script>
 
 
