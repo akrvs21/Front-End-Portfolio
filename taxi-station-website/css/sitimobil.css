@@ -1,3 +1,4 @@
+/* Hero section */
 .left-car {
   position: absolute;
   left: -346.5px;
@@ -21,6 +22,9 @@
   vertical-align: middle;
   width: 100%;
 }
+/* End of Hero section */
+
+/* Branding section */
 .car-wrapper img {
   width: 100%;
   display: block;
@@ -46,7 +50,8 @@
   left: 50%;
   top: 23%;
   transform: translate(-50%, -50%);
-  background-color: rgba(225, 176, 153, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: rgba(255, 253, 251, 0.5);
   padding: 5px;
   border-radius: 25px;
   text-align: center;
@@ -72,3 +77,116 @@
   font-family: "Josefin Slab", serif;
   text-align: center;
 }
+/* End of Branding section */
+
+/* Image gallery section */
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* End of Image gallery section */
+
+/* About sitimobil section */
+.features-main .about-card {
+  margin-right: 20px;
+}
+.features-main .grid p {
+  font-size: 2rem;
+  padding: 0 20px;
+}
+.features-main .grid {
+  padding: 30px;
+}
+.features-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+}
+.features-main .grid > div:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 911px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .features-main .grid > *:first-child,
+  .features-main .grid > div:nth-child(2) {
+    grid-column: 1;
+  }
+}
+/* End of About sitimobil section */
