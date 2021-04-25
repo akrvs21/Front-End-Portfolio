@@ -42,16 +42,6 @@ $("#carSvg").on("mouseleave", function (e) {
   $(".car-rect").attr("width", 0).attr("height", 0);
 });
 
-document.querySelector(".scroll-btn").addEventListener("click", () => {
-  console.log("cick");
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-});
-
-var target = document.querySelector(".progress-item");
-console.log("target is");
-console.log(target);
-
 function isScrolledIntoView(elem) {
   var docViewTop = $(window).scrollTop();
   var docViewBottom = docViewTop + $(window).height();

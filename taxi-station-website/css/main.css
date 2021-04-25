@@ -422,6 +422,17 @@ ul {
   font-weight: bold;
   margin: 10px;
 }
+.yellow-btn-1 {
+  padding: 6px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* border-radius: 26px; */
+  background-color: gold;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 10px;
+}
 /* animations */
 @keyframes revealBlock {
   100% {

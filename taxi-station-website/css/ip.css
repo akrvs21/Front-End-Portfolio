@@ -111,6 +111,10 @@
   border-style: solid;
   border-color: transparent;
   box-shadow: 0px 0px 10px 0px rgba(20, 18, 18, 0.3);
+  transition: transform 0.2s ease-in;
+}
+.process-item:hover {
+  transform: translateY(-15px);
 }
 .process-item img {
   position: relative;
