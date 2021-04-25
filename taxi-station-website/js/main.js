@@ -28,15 +28,17 @@ $("#mySvg").on("mousemove", function (e) {
 
 $("#carSvg").on("mousemove", function (e) {
   console.log("check carSvg");
+  document.querySelector(".swipe-hint").style.display = "none";
   var x = e.pageX - $("#carSvg").offset().left;
   var y = e.pageY - $("#carSvg").offset().top;
-  console.log("x is", x);
-  // console.log("y is", y);
   $(".car-rect").attr("width", 200).attr("height", 1000);
-  $(".car-rect").attr("x", x).attr("y", 0);
+  $(".car-rect")
+    .attr("x", x - 100)
+    .attr("y", 0);
 });
 
 $("#carSvg").on("mouseleave", function (e) {
+  document.querySelector(".swipe-hint").style.display = "block";
   $(".car-rect").attr("width", 0).attr("height", 0);
 });
 
@@ -46,73 +48,30 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
-// // $(document).ready(function () {
-// //   $("button").click(function () {
-// //     if ($("button").text() == "☰") $("button").text("x");
-// //     else $("button").text("☰");
+var target = document.querySelector(".progress-item");
+console.log("target is");
+console.log(target);
 
-// //     $("li").toggle("slow");
-// //   });
-// // });
+function isScrolledIntoView(elem) {
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+  var elemTop = $(elem).offset().top;
+  var elemBottom = elemTop + $(elem).height();
+  // console.log("elemTop", elemTop);
+  // console.log("elemBottom", elemBottom);
+  return (
+    elemBottom >= docViewTop &&
+    elemTop <= docViewBottom &&
+    elemBottom <= docViewBottom &&
+    elemTop >= docViewTop
+  );
+}
 
-// const track = document.querySelector(".carousel__track");
-// const slides = Array.from(track.children);
-
-// const nextButton = document.querySelector(".carousel__button--right");
-// const prevButton = document.querySelector(".carousel__button--left");
-// // const dotsNav = document.querySelector(".carousel__nav");
-// // const dots = Array.from(dotsNav.children);
-
-// const slideWidth = slides[0].getBoundingClientRect().width;
-
-// // arrange the slides next to one another
-// const setSlidePosition = (slide, index) => {
-//   slide.style.left = slideWidth * index + "px";
-// };
-// slides.forEach(setSlidePosition);
-
-// const moveToSlide = (track, currentSlide, targetSlide) => {
-//   if (!targetSlide) {
-//     track.style.transform = "translateX(0)";
-//     currentSlide.classList.remove("current-slide");
-//     targetSlide.classList.add("current-slide");
-//     return;
-//   }
-//   // move to the next slide
-//   track.style.transform = "translateX(-" + targetSlide.style.left;
-//   +")";
-//   currentSlide.classList.remove("current-slide");
-//   targetSlide.classList.add("current-slide");
-// };
-
-// // move slide to the right
-// nextButton.addEventListener("click", (e) => {
-//   const currentSlide = track.querySelector(".current-slide");
-//   const nextSlide = currentSlide.nextElementSibling;
-
-//   moveToSlide(track, currentSlide, nextSlide);
-// });
-
-// // move slide to the left
-// prevButton.addEventListener("click", (e) => {
-//   const currentSlide = track.querySelector(".current-slide");
-//   const prevSlide = currentSlide.previousElementSibling;
-
-//   moveToSlide(track, currentSlide, prevSlide);
-// });
-
-// // when click nav dots
-// // dotsNav.addEventListener("click", (e) => {
-// //   const targetDot = e.target.closest("button");
-// //   if (!targetDot) return;
-
-// //   const currentSlide = track.querySelector(".current-slide");
-// //   const currentDot = dotsNav.querySelector(".current-slide");
-// //   const targetIndex = dots.findIndex((dot) => dot === targetDot);
-// //   const targetSlide = slides[targetIndex];
-
-// //   moveToSlide(track, currentSlide, targetSlide);
-
-// //   currentDot.classList.remove("current-slide");
-// //   targetDot.classList.add("current-slide");
-// // });
+$(window).scroll(function () {
+  if (isScrolledIntoView($(".progress-item"))) {
+    document.querySelector(".block-effect-1").style.display = "block";
+    document.querySelector(".block-effect-2").style.display = "block";
+    document.querySelector(".car-anim-container").style.animation =
+      "carAnim 1s ease-in";
+  }
+});

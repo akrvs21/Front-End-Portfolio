@@ -28,6 +28,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Prata&family=Russo+One&family=Ubuntu+Condensed&family=Viaoda+Libre&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/anim.css"> -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -115,6 +116,7 @@
                 </div>
                 <p class="service-text">Открытие ИП является одним из основных этапов начала работы в такси.
                     ИП необходимо для легальной работы в такси и дальнейшего получения лицензии.</p>
+                <button class="yellow-btn">Подробнее</button>
             </div>
             <div class="service">
                 <div class="service-header">
@@ -124,6 +126,7 @@
                 <p class="service-text">Производится непосредственно оклейка автомобиля. Также оклеиваются ручки и
                     зеркала. После оклейки все кузовные элементы
                     возвращаются на место.</p>
+                <button class="yellow-btn">Подробнее</button>
             </div>
             <div class="service">
                 <div class="service-header">
@@ -132,13 +135,16 @@
                 </div>
                 <p class="service-text">Водитель должен получить лицензию, дающую право на легальную работу в такси.
                 </p>
+                <button class="yellow-btn">Подробнее</button>
             </div>
             <div class="service">
                 <div class="service-header">
                     <i class="fas fa-paint-brush"></i>
                     <h3>Подключиться к заказчикам.</h3>
                 </div>
-                <p class="service-text">Найди своего заказчика</p>
+                <p class="service-text">Найди своего заказчика подключаясь к самым крупным агрегаторам России, таким
+                    как Ситимобил, Яндекс Такси, Gett и многим другим</p>
+                <button class="yellow-btn">Подробнее</button>
             </div>
             <div class="service">
                 <div class="service-header">
@@ -148,15 +154,17 @@
                 <p class="service-text">Мы поможем вам с оформлением всех документов, которые необходимы водителю в его
                     работе. Их отсутствие влечет за собой
                     штраф.</p>
+                <button class="yellow-btn">Подробнее</button>
             </div>
             <div class="service">
                 <div class="service-header">
                     <i class="fas fa-building"></i>
-                    <h3>Брэндирование Ситимобил</h3>
+                    <h3>Брэндирование автомобиля</h3>
                 </div>
                 <p class="service-text">Забрендируй свой автомобиль
-                    бесплатно
+                    бесплатно под Ситимобил или Яндекс такси бесплатно
                 </p>
+                <button class="yellow-btn">Подробнее</button>
             </div>
             <div class="about-us-image-wrapper js-tilt">
                 <img src="./assets/unnamed.png" alt="">
@@ -175,28 +183,30 @@
 
         <div id="info">
             <div class="row">
-                <li class="progress-item active">ШАГ 1</li>
+                <li class="progress-item">ШАГ 1</li>
                 <div class="card">
                     <h2>Открытие ИП</h2>
                     <p>В начале офорляется ИП, это необходимо для дальнейшего получения лицензии на такси.</p>
                     <img class="main-img" src="./assets/ip.jpg" alt="">
                     <div class="block-reveal-cont">
-                        <h1 class="block-effect" style="--td: 1.2s">
-                            <div class="block-reveal" style="--bc: #4040bf; --d: .1s">Какие Документы</div>
+                        <h1 class="block-effect-1" style="--td: 1.2s; display: none; color: #fff;">
+                            <div class="block-reveal" style="--bc: #4040bf; --d: .1s">
+                                Какие Документы
+                            </div>
                             <div class="block-reveal" style="--bc: #bf4060; --d: .5s">подготовить?</div>
                         </h1>
                     </div>
-                    <div class="docs">
+                    <div class="docs-cont">
                         <label for="1">ПАСПОРТ</label>
-                        <img id="1" src="./assets/passport.jpg" alt="">
+                        <img class="docs" id="1" src="./assets/passport.jpg" alt="">
                         <label for="2">СНИЛС</label>
-                        <img id="2" src="./assets/snils.png" alt="">
+                        <img class="docs" id="2" src="./assets/snils.png" alt="">
                         <label for="3">ИНН</label>
-                        <img id="3" src="./assets/inn.png" alt="">
+                        <img class="docs" id="3" src="./assets/inn.png" alt="">
                     </div>
                 </div>
 
-                <div style="height: 15px; width: 100%; background-color: #fff; "></div>
+                <div style="height: 25px; width: 100%; background-color: #fff; "></div>
 
                 <li class="progress-item">ШАГ 2</li>
                 <div class="card">
@@ -204,6 +214,9 @@
                         автомобиля</h2>
                     <p>Пока обрабатывается ваша заявка на открытие ИП, вам необходимо оклеить свой автомобиль под такси.
                     </p>
+                    <div class="swipe-hint swipe-horizontal">
+                        <img src="./assets/hand1.png" alt="">
+                    </div>
                     <svg id="carSvg" class="car-anim-container">
                         <clippath id="car-clip">
                             <rect x="0" y="0" width="0" height="0" class="car-rect" />
@@ -223,20 +236,20 @@
                     <p>После оклейки автомобиля и внесения изменений о новой цветовой гамме в СТС, вы смело можете
                         приступать к оформлению
                         лицензии на такси.</p>
-                    <img class="main-img" src="./assets/license.jpg" alt="">
-                    <div class="block-reveal-cont">
-                        <h1 class="block-effect" style="--td: 1.2s">
+                    <img class="main-img" src="./assets/license.jpg" style="top: 20%;" alt="">
+                    <div class="block-reveal-cont" style="top: 12%;">
+                        <h1 class="block-effect-2" style="--td: 1.2s;">
                             <div class="block-reveal" style="--bc: #4040bf; --d: .1s">Какие Документы</div>
                             <div class="block-reveal" style="--bc: #bf4060; --d: .5s">подготовить?</div>
                         </h1>
                     </div>
-                    <div class="docs">
+                    <div class="docs-cont" style="top: 20%;">
                         <label for="1">ПАСПОРТ</label>
-                        <img id="1" src="./assets/passport.jpg" alt="">
+                        <img class="docs" id="1" src="./assets/passport.jpg" alt="">
                         <label for="2">СНИЛС</label>
-                        <img id="2" src="./assets/sts.png" alt="">
+                        <img class="docs" id="2" src="./assets/sts.png" alt="">
                         <label for="3">ИНН</label>
-                        <img id="3" src="./assets/ip.jpg" alt="">
+                        <img class="docs" id="3" src="./assets/ip.jpg" alt="">
                     </div>
                 </div>
 
@@ -250,7 +263,8 @@
                         собой штрафы в размере
                         до 100 000 руб.
                         Вы также можете приобрести их у нас.</p>
-                    <img class="block-reveal-cont" style="width: 520px;;" src="./assets/kolaj.png" alt="">
+                    <img class="block-reveal-cont kolaj" style="width: 520px; top: 0; left: 240%;"
+                        src="./assets/kolaj.png" alt="">
                 </div>
 
                 <div style="height: 15px; width: 100%; background-color: #fff; "></div>
@@ -263,8 +277,6 @@
                         как Ситимобил, Яндекс
                         Такси, Gett и многим другим.
                     </p>
-                    <!-- <img src="./assets/siti.jpg" class="main-img" alt="">
-                    <img src="./assets/siti.png" class="main-img" alt=""> -->
                     <img src="./assets/siti.png" style="left: 180%;" class="main-img" alt="">
                     <img src="./assets/yandex.png" style="left: 320%;" class="main-img" alt="">
                     <img src="./assets/get2.png" style="left: 455%; background-color: black;" class="main-img" alt="">
@@ -440,7 +452,7 @@
             <div class="contact-left">
                 <svg id="mySvg">
                     <clippath id="clip">
-                        <circle cx="-20" cy="-20" r="80" class="a" />
+                        <circle cx="5" cy="5" r="80" class="a" />
                     </clippath>
 
                     <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" class="one" />
