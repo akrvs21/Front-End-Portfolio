@@ -17,15 +17,6 @@ $(".js-tilt").tilt({
   scale: 1.2,
 });
 
-$("#mySvg").on("mousemove", function (e) {
-  console.log("check svg");
-  var x = e.pageX - $("#mySvg").offset().left;
-  var y = e.pageY - $("#mySvg").offset().top;
-  // console.log(x);
-  // console.log(y);
-  $(".a").attr("cx", x).attr("cy", y);
-});
-
 $("#carSvg").on("mousemove", function (e) {
   console.log("check carSvg");
   document.querySelector(".swipe-hint").style.display = "none";

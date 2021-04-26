@@ -18,3 +18,13 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
+// Image hover effect animation
+$("#mySvg").on("mousemove", function (e) {
+  console.log("check svg");
+  var x = e.pageX - $("#mySvg").offset().left;
+  var y = e.pageY - $("#mySvg").offset().top;
+  // console.log(x);
+  // console.log(y);
+  $(".a").attr("cx", x).attr("cy", y);
+});
