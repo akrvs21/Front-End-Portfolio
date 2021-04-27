@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/license.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Vollkorn&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -62,7 +63,7 @@
             <p style="border-radius: 25px;" class="title">Лицензия на Такси</p>
             <p style="background-color: rgba(255, 253, 251, 0.5); background-color: rgba(0, 0, 0, 0.4);">для Москвы и
                 Московской области</p>
-            <a href="#branding"><button id="free">900 РУБ</button></a>
+            <a href="#process"><button id="free">900 РУБ</button></a>
         </div>
     </section>
     <!-- End of Hero section -->
@@ -73,7 +74,7 @@
             <h1 class="section-heading">Процесс оформления лицензии на такси</h1>
             <div class="underline"></div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper license-wrapper">
             <h2>ШАГ 1</h2>
             <p>После оклейки автомобиля и открытия ИП, водитель должен получить лицензию, дающую право на легальную
                 работу в такси.</p>
@@ -102,6 +103,66 @@
             </div>
             <h2>ШАГ 2</h2>
             <p style="text-align: center;">Проверить все требование к автомобилю</p>
+            <div class="process-items license-items">
+                <div class="process-item license">
+                    <p>Цветовая гамма автомобиля для МСК</p>
+                    <img src="./assets/taxi-sign.jpg" alt="">
+                    <h1>+</h1>
+                    <div class="color-box-mo yellow tooltip"><span class="tooltiptext">Жёлтый цвет</span></div>
+                </div>
+                <div class="process-item license">
+                    <p>Цветовая гамма автомобиля для МО</p>
+                    <img src="./assets/taxi-sign.jpg" alt="">
+                    <h1>+</h1>
+                    <div class="color-box white tooltip"><span class="tooltiptext">Белый цвет</span></div>
+                    <div class="color-box yellow tooltip"><span class="tooltiptext">Жёлтый цвет</span></div>
+                    <div class="color-box gray tooltip" style="width: 120px;"><span class="tooltiptext">Серый
+                            цвет</span></div>
+                </div>
+            </div>
+            <p style="text-align: center;">также проверьте следующие пункты:</p>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Название предмета</th>
+                        <th>Описание</th>
+                    </tr>
+                    <thead>
+                    <tbody>
+                        <tr>
+                            <td>Кузов</td>
+                            <td>седан, хэтчбек или универсал.</td>
+
+                        </tr>
+                        <tr>
+                            <td>Руль</td>
+                            <td>расположение руля с левой стороны.</td>
+                        </tr>
+                        <tr>
+                            <td>Страховка</td>
+                            <td>наличие страховки ОСАГО.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Государственный номер</td>
+                            <td>российский государственный номер.</td>
+                        </tr>
+                        <tr>
+                            <td>Тех. требования</td>
+                            <td>технически исправный автомобиль.</td>
+                        </tr>
+                        <tr>
+                            <td>Количество посадочных мест</td>
+                            <td>максимум 6 мест</td>
+                        </tr>
+                    </tbody>
+            </table>
+            <h2>Готово !</h2>
+            <img src="./assets/check1.png" alt="">
+            <p style="text-align: center; margin: 20px 0;">Спустя 3-5 дней ваша лицензия будет готова. После
+                получения лицензии вы
+                можете переходить к следующему этапу -
+                подключению к сервисам такси. А также приобрести необходимые сопроводительные документы.</p>
         </div>
     </section>
     <!-- End of Process section -->
@@ -109,7 +170,8 @@
     <!-- About sitimobil section -->
     <section class="features-main my-2">
         <div class="section-header">
-            <h1 class="section-heading"> Немного подробностей о брендировании Ситимобил
+            <h1 class="section-heading"> Немного подробностей
+                об оформлении лицензии на такси
             </h1>
             <div class="underline"></div>
         </div>
@@ -159,7 +221,11 @@
         </div>
     </section>
     <!-- End of About sitimobil section -->
-
+    <div class="section-header">
+        <h1 class="section-heading"> Нужно проконсультироваться? Свяжитесь с нами
+        </h1>
+        <div class="underline"></div>
+    </div>
     <!-- Contact section -->
     <section class="contact">
         <div class="wrapper-form">
@@ -187,7 +253,29 @@
                     </div>
                     <div class="input-group">
                         <input type="text" class="field" id="brand">
-                        <label for="brand" class="message">Марка и модель автомобиля</label>
+                        <label for="brand" class="message">Номер ИНН у ИП</label>
+                    </div>
+                    <div style="align-self: baseline; ">
+                        <!-- actual upload which is hidden -->
+                        <input type="file" id="actual-btn" hidden />
+
+                        <!-- our custom upload button -->
+                        <label class="file-upload tooltip" for="actual-btn">Загрузить файл<span
+                                class="tooltiptext">Паспорт: разворот с паспортными данными и пропиской</span></label>
+
+                        <!-- name of file chosen -->
+                        <span id="file-chosen">Файл не выбран</span>
+                    </div>
+                    <div style="align-self: baseline;">
+                        <!-- actual upload which is hidden -->
+                        <input type="file" id="actual-btn" hidden />
+
+                        <!-- our custom upload button -->
+                        <label class="file-upload tooltip" for="actual-btn">Загрузить файл <span
+                                class="tooltiptext">СТС</span></label>
+
+                        <!-- name of file chosen -->
+                        <span id="file-chosen">Файл не выбран</span>
                     </div>
                     <input type="submit" class="submit-btn" value="Отправить" />
                 </form>

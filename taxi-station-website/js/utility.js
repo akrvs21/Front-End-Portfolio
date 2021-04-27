@@ -28,3 +28,11 @@ $("#mySvg").on("mousemove", function (e) {
   // console.log(y);
   $(".a").attr("cx", x).attr("cy", y);
 });
+
+const actualBtn = document.getElementById("actual-btn");
+
+const fileChosen = document.getElementById("file-chosen");
+
+actualBtn.addEventListener("change", function () {
+  fileChosen.textContent = this.files[0].name;
+});

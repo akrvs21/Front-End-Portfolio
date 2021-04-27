@@ -1,6 +1,13 @@
 .license {
   width: 40%;
 }
+
+.license-wrapper h2 {
+  margin: 20px 0;
+}
+.license-wrapper p {
+  margin: 10px 0;
+}
 .license img {
   float: left;
   left: 0;
@@ -25,4 +32,198 @@
 .license-items {
   height: 0%;
   margin-top: 3rem;
+}
+
+.color-box-mo {
+  float: right;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border: 3px #000 solid;
+  transition: transform 0.2s 0.25s ease-in;
+}
+.color-box {
+  float: right;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border: 3px #000 solid;
+  transition: transform 2s ease-in;
+}
+.color-box:hover {
+  border: 1px #000 solid;
+}
+.color-box-mo:hover {
+  border: 1px #000 solid;
+}
+.yellow {
+  background-color: #ffcb00;
+}
+.white {
+  background-color: #fff;
+}
+.gray {
+  background-color: rgb(199, 199, 199);
+}
+.license img {
+  width: 100px;
+  float: left;
+  margin: 10px;
+}
+
+.license h1 {
+  position: relative;
+  display: inline;
+  top: 40px;
+  left: 6px;
+  font-size: 3rem;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  height: initial;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1.5rem;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+table {
+  /* border-spacing: 1; */
+  /* border-collapse: collapse; */
+  background: white;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td,
+table th {
+  padding-left: 8px;
+  border: 1px #000 solid;
+  letter-spacing: 1.5px;
+}
+table thead tr {
+  height: 60px;
+  background: #ffed86;
+  font-size: 2rem;
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+
+table tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #e3f1d5;
+  font-size: 1.6rem;
+  font-family: "Vollkorn", serif;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td,
+table th {
+  text-align: left;
+}
+table td.l,
+table th.l {
+  text-align: right;
+}
+table td.c,
+table th.c {
+  text-align: center;
+}
+table td.r,
+table th.r {
+  text-align: center;
+}
+@media screen and (max-width: 35.5em) {
+  table {
+    display: block;
+  }
+  table > *,
+  table tr,
+  table td,
+  table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 8px 0;
+  }
+  table tbody tr td {
+    padding-left: 45%;
+    margin-bottom: 12px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    position: absolute;
+    font-weight: 700;
+    width: 40%;
+    left: 10px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Название предмета";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Описание";
+  }
+}
+
+.file-upload {
+  background-color: rgb(17, 139, 209);
+  color: white;
+  padding: 1.3rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1.3px;
+  font-weight: bold;
+}
+
+#file-chosen {
+  margin-left: 0.3rem;
+  font-size: 1.1rem;
+  font-family: sans-serif;
 }
