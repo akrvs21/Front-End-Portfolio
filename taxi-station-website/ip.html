@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./css/ip.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <style>
+        .swal2-popup {
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,24 +32,24 @@
                     <a href="#">Наши сервисы</a>
                     <ul class="dropdown">
                         <li><a href="./ip.html">Открытие ИП</a></li>
-                        <li><a href="#">Оклейка авто</a></li>
+                        <li><a class="not-finished" href="#">Оклейка авто</a></li>
                         <li><a href="./sitimobil.html">Брендирование Ситимобил</a></li>
                         <li><a href="./yandex.html">Брендирование Яндекс Такси</a></li>
-                        <li><a href="#">Лицензия на такси</a></li>
-                        <li><a href="#">Подключение к заказам</a></li>
+                        <li><a href="./license.html">Лицензия на такси</a></li>
+                        <li><a class="not-finished" href="#">Подключение к заказам</a></li>
                     </ul>
                 </li>
                 <li class="navigation">
                     <a href="#">Сопровождение</a>
                     <ul class="dropdown">
-                        <li><a href="#">Сопроводительные документы</a></li>
-                        <li><a href="#">Предрейсовый осмотр</a></li>
-                        <li><a href="#">Диагностическая карта</a></li>
-                        <li><a href="#">Бланки строгой отчётности</a></li>
-                        <li><a href="#">Карточка фрахтовщика</a></li>
-                        <li><a href="#">Правила перевозки</a></li>
-                        <li><a href="#">Договор аренды ТС</a></li>
-                        <li><a href="#">Тонировка автомобиля</a></li>
+                        <li><a class="not-finished" href="#">Сопроводительные документы</a></li>
+                        <li><a class="not-finished" href="#">Предрейсовый осмотр</a></li>
+                        <li><a class="not-finished" href="#">Диагностическая карта</a></li>
+                        <li><a class="not-finished" href="#">Бланки строгой отчётности</a></li>
+                        <li><a class="not-finished" href="#">Карточка фрахтовщика</a></li>
+                        <li><a class="not-finished" href="#">Правила перевозки</a></li>
+                        <li><a class="not-finished" href="#">Договор аренды ТС</a></li>
+                        <li><a class="not-finished" href="#">Тонировка автомобиля</a></li>
                     </ul>
                 </li>
                 <li>
@@ -243,9 +250,139 @@
     </section>
     <!-- End of Product section -->
 
-    <!-- Info section -->
-    <section class="info"></section>
-    <!-- End of Info section -->
+    <!-- About sitimobil section -->
+    <section class="features-main my-2">
+        <div class="section-header">
+            <h1 class="section-heading"> Немного подробностей
+                об открытии ИП
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <div class="container grid grid-3">
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End of About sitimobil section -->
+    <div class="section-header">
+        <h1 class="section-heading"> Нужно проконсультироваться? Свяжитесь с нами
+        </h1>
+        <div class="underline"></div>
+    </div>
+    <!-- Contact section -->
+    <section class="contact">
+        <div class="wrapper-form">
+            <div class="contact-left">
+                <svg id="mySvg">
+                    <clippath id="clip">
+                        <circle cx="5" cy="5" r="80" class="a" />
+                    </clippath>
+
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" class="one" />
+
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" clip-path="url(#clip)" />
+                </svg>
+            </div>
+            <div class="contact-right">
+                <h1 class="contact-heading">Свяжитесь с нами</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="field" id="name">
+                        <label for="name" class="input-label">Ваше Имя</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id="number">
+                        <label for="number" class="input-label">Ваш Телефон</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id="brand">
+                        <label for="brand" class="message">Номер ИНН у ИП</label>
+                    </div>
+                    <div style="align-self: baseline; ">
+                        <!-- actual upload which is hidden -->
+                        <input type="file" id="actual-btn" hidden />
+
+                        <!-- our custom upload button -->
+                        <label class="file-upload tooltip" for="actual-btn">Загрузить файл<span
+                                class="tooltiptext">Паспорт:
+                                разворот с паспортными данными и пропиской</span></label>
+
+                        <!-- name of file chosen -->
+                        <span id="file-chosen">Файл не выбран</span>
+                    </div>
+                    <div style="align-self: baseline;">
+                        <!-- actual upload which is hidden -->
+                        <input type="file" id="actual-btn" hidden />
+
+                        <!-- our custom upload button -->
+                        <label class="file-upload tooltip" for="actual-btn">Загрузить файл <span
+                                class="tooltiptext">СТС</span></label>
+
+                        <!-- name of file chosen -->
+                        <span id="file-chosen">Файл не выбран</span>
+                    </div>
+                    <input type="submit" class="submit-btn" value="Отправить" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact section -->
+
+    <!-- Bot section -->
+    <div class="bot">
+        <p class="bot-text">
+            Либо, <br>
+            заходи <br>
+            в наш <br>
+            телеграм <br>
+            для большей <br>
+            информации <br>
+        </p>
+        <button>БОТ</button>
+        <img src="./assets/bot.jpg" alt="">
+    </div>
+    <!-- End of Bot section -->
+
 
     <!-- Footer section -->
     <footer>

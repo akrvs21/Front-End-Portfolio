@@ -29,10 +29,21 @@ $("#mySvg").on("mousemove", function (e) {
   $(".a").attr("cx", x).attr("cy", y);
 });
 
-const actualBtn = document.getElementById("actual-btn");
-
-const fileChosen = document.getElementById("file-chosen");
-
-actualBtn.addEventListener("change", function () {
-  fileChosen.textContent = this.files[0].name;
+document.querySelectorAll(".not-finished").forEach((item) => {
+  item.addEventListener("click", () => {
+    console.log("sweet");
+    const el = document.createElement("div");
+    el.innerHTML =
+      "Ссылка на <a style='color: rgb(29, 104, 226); font-weight: bold;' href='./index.html'>Контакты</a>";
+    Swal.fire({
+      title: "Пожалуйста подождите",
+      text: "Вы можете перейти в Контакты чтобы связаться с нами.",
+      imageUrl: "assets/construction.png",
+      imageWidth: 600,
+      imageHeight: 264,
+      footer: el,
+      width: "52rem",
+      imageAlt: "Custom image",
+    });
+  });
 });

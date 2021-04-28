@@ -1,0 +1,14 @@
+{
+  "name": "taxi-station-website",
+  "version": "1.0.0",
+  "description": "[Check this DEMO](https://raider2107.github.io/Front-End-Portfolio/taxi-station-website/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^10.16.6"
+  }
+}
