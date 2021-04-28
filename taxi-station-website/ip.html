@@ -335,31 +335,8 @@
                         <label for="number" class="input-label">Ваш Телефон</label>
                     </div>
                     <div class="input-group">
-                        <input type="text" class="field" id="brand">
-                        <label for="brand" class="message">Номер ИНН у ИП</label>
-                    </div>
-                    <div style="align-self: baseline; ">
-                        <!-- actual upload which is hidden -->
-                        <input type="file" id="actual-btn" hidden />
-
-                        <!-- our custom upload button -->
-                        <label class="file-upload tooltip" for="actual-btn">Загрузить файл<span
-                                class="tooltiptext">Паспорт:
-                                разворот с паспортными данными и пропиской</span></label>
-
-                        <!-- name of file chosen -->
-                        <span id="file-chosen">Файл не выбран</span>
-                    </div>
-                    <div style="align-self: baseline;">
-                        <!-- actual upload which is hidden -->
-                        <input type="file" id="actual-btn" hidden />
-
-                        <!-- our custom upload button -->
-                        <label class="file-upload tooltip" for="actual-btn">Загрузить файл <span
-                                class="tooltiptext">СТС</span></label>
-
-                        <!-- name of file chosen -->
-                        <span id="file-chosen">Файл не выбран</span>
+                        <textarea class="field" id="message" placeholder="Сообщение"></textarea>
+                        <label for="message" class="message"></label>
                     </div>
                     <input type="submit" class="submit-btn" value="Отправить" />
                 </form>
