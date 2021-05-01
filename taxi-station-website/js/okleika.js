@@ -96,6 +96,17 @@ $(document).ready(function () {
       document.querySelector(".product-price span").textContent = "9 990 руб";
     }
   });
+  // Add to card
+  $(".cart-btn").on("click", function (e) {
+    e.preventDefault();
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Успешно добавлено в корзину",
+      showConfirmButton: false,
+      timer: 150000,
+    });
+  });
   // Tips modal
   $(".auto-type-1").on("click", function () {
     Swal.fire(
