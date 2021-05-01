@@ -1,5 +1,5 @@
 .license {
-  width: 40%;
+  width: 35%;
 }
 
 .license-wrapper h2 {
@@ -41,7 +41,7 @@
   height: 100px;
   background-color: #000;
   border: 3px #000 solid;
-  transition: transform 0.2s 0.25s ease-in;
+  transition: border 0.2s linear;
 }
 .color-box {
   float: right;
@@ -49,14 +49,64 @@
   width: 50px;
   height: 50px;
   border: 3px #000 solid;
-  transition: transform 2s ease-in;
+  transition: border 0.2s linear;
 }
 .color-box:hover {
-  border: 1px #000 solid;
+  /* border: 1px #000 solid; */
 }
 .color-box-mo:hover {
   border: 1px #000 solid;
 }
+
+.anma,
+.color-box-mo {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+.anma::after {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  animation-name: ripple;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+}
+.anma::before {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  animation-name: ripple;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+}
+
 .yellow {
   background-color: #ffcb00;
 }
@@ -76,7 +126,7 @@
   position: relative;
   display: inline;
   top: 40px;
-  left: 6px;
+  left: 25px;
   font-size: 3rem;
 }
 .tooltip {
@@ -226,4 +276,34 @@ table th.r {
   margin-left: 0.3rem;
   font-size: 1.1rem;
   font-family: sans-serif;
+}
+
+/* .request-loader {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+} */
+/* .request-loader span {
+  position: relative;
+  font-size: 72px;
+  top: 5px;
+  left: -5px;
+} */
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
 }
