@@ -35,6 +35,7 @@
 }
 .doc-card {
   -webkit-column-break-inside: avoid;
+  break-after: avoid;
   cursor: pointer;
   margin-bottom: 20px;
   width: 100%;
