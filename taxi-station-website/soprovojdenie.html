@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>брендирование Яндекс Такси</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/ip.css">
+    <link rel="stylesheet" href="./css/sitimobil.css">
+    <link rel="stylesheet" href="./css/okleika.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Fira+Sans+Extra+Condensed&family=Playfair+Display+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/soprovojdenie.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
+
+
+    <style>
+        .swal2-popup {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigator section -->
+    <section>
+        <div class="topnav">
+            <a href="./index.html">
+                <h1 data-heading="О">ТАКСОПАРК</h1>
+            </a>
+            <ul class="navbar">
+                <button> x </button>
+                <li class="navigation">
+                    <a href="#">Наши сервисы</a>
+                    <ul class="dropdown">
+                        <li><a href="./ip.html">Открытие ИП</a></li>
+                        <li><a href="./okleika.html">Оклейка авто</a></li>
+                        <li><a href="./sitimobil.html">Брендирование Ситимобил</a></li>
+                        <li><a href="./yandex.html">Брендирование Яндекс Такси</a></li>
+                        <li><a href="./license.html">Лицензия на такси</a></li>
+                        <li><a class="not-finished" href="#">Подключение к заказам</a></li>
+                    </ul>
+                </li>
+                <li class="navigation">
+                    <a href="#">Сопровождение</a>
+                    <ul class="dropdown">
+                        <li><a href="./soprovojdenie.html">Сопроводительные документы</a></li>
+                        <li><a class="not-finished" href="#">Предрейсовый осмотр</a></li>
+                        <li><a class="not-finished" href="#">Диагностическая карта</a></li>
+                        <li><a class="not-finished" href="#">Бланки строгой отчётности</a></li>
+                        <li><a class="not-finished" href="#">Карточка фрахтовщика</a></li>
+                        <li><a class="not-finished" href="#">Правила перевозки</a></li>
+                        <li><a class="not-finished" href="#">Договор аренды ТС</a></li>
+                        <li><a class="not-finished" href="#">Тонировка автомобиля</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Navigator -->
+    </section>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="carousel hero-image" style="background-image: url('./assets/ofis.jpg'); opacity: 1;">
+            <!-- <img style="opacity: 0.6;" src="./assets/office.jpg" alt=""> -->
+            <p style="border-radius: 25px; width: 28%;" class="title">сопровождение</p>
+            <p
+                style="top: 40%; background-color: rgba(255, 253, 251, 0.7); font-size: 4rem; border-radius: 25px; color: #000;">
+                необходимые
+                сопроводительные документы для работы в такси
+            </p>
+            <a href="#process"><button style="top: 58%;" id="free">НАЧНИ ЗДЕСЬ</button></a>
+        </div>
+    </section>
+    <!-- End of Hero section -->
+
+    <!-- Process section -->
+    <section class="process" id="process">
+        <div class="wrapper">
+            <h2>Сопроводительные документы</h2>
+            <p class="desc">После получения лицензии мы поможем вам с оформлением всех документов,
+                которые необходимы водителю в его
+                работе. Их
+                отсутствие влечет за собой штраф.</p>
+            <div class="process-items soprovojdenie">
+                <div class="process-item">
+                    <img src="./assets/3.png" alt="">
+                    <p>Путевые листы и Предрейсовый осмотр</p>
+                </div>
+                <div class="process-item">
+                    <img src="./assets/raht.jpg" alt="">
+                    <p>Карточка фрахтовщика</p>
+                </div>
+                <div class="process-item">
+                    <img src="./assets/diagnost.jpg" alt="">
+                    <p>Диагностическая карта</p>
+                </div>
+            </div>
+            <div class="process-items soprovojdenie">
+                <div class="process-item">
+                    <img src="./assets/polis.jpg" alt="">
+                    <p>Страховой полис</p>
+                </div>
+                <div class="process-item">
+                    <img src="./assets/blank.jpg" alt="">
+                    <p>Бланки строгой отчётности</p>
+                </div>
+                <div class="process-item">
+                    <img src="./assets/broshura.jpg" alt="">
+                    <p>Правила перевозки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Process section -->
+
+    <!-- Documents section -->
+    <section class="documents">
+        <div class="section-header">
+            <h1 class="section-heading"> Пакет документации для таксиста
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <div class="wrap">
+            <div class="doc-card">
+                <div class="card__picture">
+                    <h1>I</h1>
+                </div>
+                <div class="card__content">
+                    <p>В перечень документов для работы в такси входит путевой лист автомобиля-такси. Он действительный
+                        одни сутки и
+                        подтверждает, что на линию для перевозки пассажиров вышла технически исправная машина, а шофёр
+                        полностью здоровый и
+                        находится в хорошем самочувствии. Путевка нужна для повышения безопасности пассажироперевозок
+                        благодаря ежедневному
+                        должному контролю техсостояния автомобиля и здоровья водителя. Перед рейсом на бланке ставятся
+                        отметки, заверенные
+                        подписью медработника и автомеханика.</p>
+                </div>
+            </div>
+            <div class="doc-card">
+                <div class="card__picture" style="height: 180px">
+                    <h1>II</h1>
+                </div>
+                <div class="card__content">
+                    <p>Результаты ТО автомобилей-такси, проводимых для выявления неисправностей и своевременного
+                        устранения
+                        поломок,
+                        отображаются в диагностической карте. Документ подтверждает возможность использовать автомобиль
+                        для
+                        пассажироперевозок
+                        по Москве и области без опасных последствий. ТО проводится с целью обеспечения безопасности на
+                        дороге, недопущения
+                        поломок и создания аварийных ситуаций. Также карта необходима для получения страховки.</p>
+                </div>
+            </div>
+            <div class="doc-card">
+                <div class="card__picture" style="height: 160px">
+                    <h1>III</h1>
+                </div>
+                <div class="card__content">
+                    <p>В пакет документов для работы в такси входит карточка фрахтовщика. Она размещается в машине на
+                        панели
+                        приборов на видном
+                        для пассажиров месте. Карта нужна для информирования клиентов об организации или индивидуальном
+                        предпринимателе,
+                        предоставляющем услуги по пассажироперевозкам. Документ содержит информацию о фрахтовщике (ИП
+                        или
+                        ООО), полный адрес и
+                        номер контактного телефона, марка и модель автомобиля, номер и срок действия разрешения на
+                        пассажироперевозки, а также
+                        QR – код для сканирования электронной копии лицензии. При размещении в салоне машины карта
+                        должна
+                        хорошо читаться
+                        клиентами, не препятствовать работе вентиляционной системы и срабатыванию подушек безопасности
+                        при
+                        ДТП.</p>
+                </div>
+            </div>
+            <div class="doc-card">
+                <div class="card__picture" style="height: 150px">
+                    <h1>IV</h1>
+                </div>
+                <div class="card__content">
+                    <p>Клиент, воспользовавшись услугами такси, может рассчитаться картой и получить электронный чек на
+                        почту после списания
+                        денег. В случае оплаты за предоставленный сервис наличными, водителем от руки заполняется бланк
+                        для
+                        выдачи квитанции. У
+                        каждого таксиста должны быть БСО для возможности клиентам рассчитаться наличными в конце поездки
+                        и
+                        недопущения
+                        конфликтных ситуаций. Бланки строгой отчетности входят в список документов для работы в такси и
+                        должны находиться у
+                        водителя. БСО показываются для проверки сотрудникам МАДИ вместе с другой документацией.</p>
+                </div>
+            </div>
+            <div class="column-break"></div>
+            <div class="doc-card">
+                <div class="card__picture" style="height: 220px">
+                    <h1>V</h1>
+                </div>
+                <div class="card__content">
+                    <p>Обязанности пассажиров определены правилами дорожного движения. С целью решения конфликтов и
+                        обеспечения безопасной
+                        перевозки людей и груза, в салоне должны быть распечатанные правила поведения пассажиров в
+                        автомобилях-такси. Документ
+                        рекомендуется положить в карманы сидений или в ниши передних и задних дверей.</p>
+                </div>
+            </div>
+            <div class="doc-card">
+                <div class="card__picture" style="height: 140px">
+                    <h1>VI</h1>
+                </div>
+                <div class="card__content">
+                    <p>С целью компенсации материального ущерба и расходов на лечение пострадавших пассажиров в случае
+                        аварии на дороге, в
+                        пакет документов необходимых для работы в такси помещается страховой полис. Если отсутствует
+                        страховка, то при
+                        возникновении критических ситуаций ответственность возлагается на водителя, занимающегося
+                        коммерческой
+                        пассажироперевозкой. Для такси используется специальный полис, выписываемый на конкретное авто.
+                        Такая страховка дороже
+                        по стоимости, чем обычная, но позволяет компенсировать траты на ремонт поврежденного транспорта
+                        и
+                        медобслуживание
+                        пострадавших людей.</p>
+                </div>
+            </div>
+            <div class="doc-card">
+                <div class="card__picture" style="height: 180px">
+                    <h1>VII</h1>
+                </div>
+                <div class="card__content">
+                    <p>Водитель должен получить разрешение на легальную работу в такси, выдаваемое на 5 лет
+                        индивидуальному
+                        предпринимателю или
+                        ООО. Физлицам лицензия госорганами не выдается. Документ получают на минивэны и легковые
+                        автомобили
+                        в кузове седан,
+                        хэтчбек, универсал, оборудованные максимум шестью посадочными местами (вместе с водительским
+                        креслом). Транспортные
+                        средства другого типа, в том числе кроссоверы, не имеют права регистрироваться в такси. До
+                        сентября
+                        2020 года разрешение
+                        для такси по Москве и МО выдавались на бумажной основе. Новые лицензии выдаются в виде
+                        индивидуального QR-кода, после
+                        сканирования которого, предоставляется возможность перейти на сайт с электронным документом.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of documents section -->
+
+    <!-- About sitimobil section -->
+    <section class="features-main my-2">
+        <div class="section-header">
+            <h1 class="section-heading"> Немного подробностей
+                об оклейке автомобиля
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <div class="container grid grid-3">
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End of About sitimobil section -->
+
+    <!-- Contact section -->
+    <section class="contact">
+        <div class="wrapper-form">
+            <div class="contact-left">
+                <svg id="mySvg">
+                    <clippath id="clip">
+                        <circle cx="5" cy="5" r="80" class="a" />
+                    </clippath>
+
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" class="one" />
+
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" clip-path="url(#clip)" />
+                </svg>
+            </div>
+            <div class="contact-right">
+                <h1 class="contact-heading">Свяжитесь с нами</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="field" id="name">
+                        <label for="name" class="input-label">Ваше Имя</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id="number">
+                        <label for="number" class="input-label">Ваш Телефон</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id="brand">
+                        <label for="brand" class="message">Марка и модель автомобиля</label>
+                    </div>
+                    <input type="submit" class="submit-btn" value="Отправить" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact section -->
+
+    <!-- Bot section -->
+    <div class="bot">
+        <p class="bot-text">
+            Либо, <br>
+            заходи <br>
+            в наш <br>
+            телеграм <br>
+            для большей <br>
+            информации <br>
+        </p>
+        <button>БОТ</button>
+        <img src="./assets/bot.jpg" alt="">
+    </div>
+    <!-- End of Bot section -->
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-wrap">
+            <p>Copyright &copy; 2021 </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer section -->
+
+    <button class="scroll-btn">
+        <h3>&#10595;</h3>
+    </button>
+</body>
+<script src="./libs/jquery.min.js"></script>
+<script src="./js/utility.js"></script>
+<script src="./js/okleika.js"></script>
+
+</html>
