@@ -104,7 +104,7 @@ $(document).ready(function () {
       icon: "success",
       title: "Успешно добавлено в корзину",
       showConfirmButton: false,
-      timer: 150000,
+      timer: 1500,
     });
   });
   // Tips modal
