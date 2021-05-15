@@ -6,6 +6,7 @@
   height: 150px;
   padding: 20px;
   position: absolute;
+  border-radius: 50px;
   left: 0px;
   top: 150px;
   transform: rotate(-25deg);
@@ -13,6 +14,7 @@
 .wrapper .second {
   width: 250px;
   height: 150px;
+  border-radius: 50px;
   padding: 20px;
   position: absolute;
   right: 0px;
