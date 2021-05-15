@@ -26,11 +26,7 @@
 * {
   box-sizing: border-box;
 }
-body {
-  background-color: #ddd;
-  font-family: "Source Sans Pro";
-  font-weight: 300;
-}
+
 .Message {
   display: table;
   position: relative;
@@ -74,9 +70,10 @@ body {
   vertical-align: middle;
   padding: 30px 20px 30px 10px;
 }
-.Message-body > p {
+.Message-body p:first-child {
   line-height: 1.2;
   margin-top: 6px;
+  font-weight: 800;
   text-transform: uppercase;
 }
 .Message-button {

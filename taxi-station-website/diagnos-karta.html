@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше Сопровождение</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/ip.css">
+    <link rel="stylesheet" href="./css/sitimobil.css">
+    <link rel="stylesheet" href="./css/okleika.css">
+    <link rel="stylesheet" href="./css/predreisovii-osmotr.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Fira+Sans+Extra+Condensed&family=Playfair+Display+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/soprovojdenie.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/okleika.css">
+    <script src="https://kit.fontawesome.com/c7b8ec2e41.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .swal2-popup {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigator section -->
+    <section>
+        <div class="topnav">
+            <a href="./index.html">
+                <h1 data-heading="О">ТАКСОПАРК</h1>
+            </a>
+            <ul class="navbar">
+                <button> x </button>
+                <li class="navigation">
+                    <a href="#">Наши сервисы</a>
+                    <ul class="dropdown">
+                        <li><a href="./ip.html">Открытие ИП</a></li>
+                        <li><a href="./okleika.html">Оклейка авто</a></li>
+                        <li><a href="./sitimobil.html">Брендирование Ситимобил</a></li>
+                        <li><a href="./yandex.html">Брендирование Яндекс Такси</a></li>
+                        <li><a href="./license.html">Лицензия на такси</a></li>
+                        <li><a class="not-finished" href="#">Подключение к заказам</a></li>
+                    </ul>
+                </li>
+                <li class="navigation">
+                    <a href="#">Сопровождение</a>
+                    <ul class="dropdown">
+                        <li><a href="./soprovojdenie.html">Сопроводительные документы</a></li>
+                        <li><a href="./predreisovii-osmotr.html">Предрейсовый осмотр</a></li>
+                        <li><a class="not-finished" href="#">Диагностическая карта</a></li>
+                        <li><a href="./otkritie-pechati.html">Изготовление печати для ИП</a></li>
+
+                        <li><a class="not-finished" href="#">Бланки строгой отчётности</a></li>
+                        <li><a class="not-finished" href="#">Карточка фрахтовщика</a></li>
+                        <li><a class="not-finished" href="#">Правила перевозки</a></li>
+                        <li><a class="not-finished" href="#">Договор аренды ТС</a></li>
+                        <li><a class="not-finished" href="#">Тонировка автомобиля</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Navigator -->
+    </section>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="carousel hero-image" style="background-image: url('./assets/tehosm.png'); opacity: 1;">
+            <!-- <img style="opacity: 0.6;" src="./assets/office.jpg" alt=""> -->
+            <p style="border-radius: 25px; width: 34%;" class="title">диагностическая картa</p>
+            <p
+                style="padding: 10px; top: 40%; background-color: rgba(255, 253, 251, 0.7); font-size: 4rem; border-radius: 25px; color: #000;">
+                Оформи диагностическую карту у нас
+            </p>
+            <a href="#process"><button style="top: 58%;" id="free">НАЧНИ ЗДЕСЬ</button></a>
+        </div>
+    </section>
+    <!-- End of Hero section -->
+
+    <!-- Process section -->
+    <section class="process" id="process">
+        <div class="wrapper">
+            <h2>Для чего нужна диагностическая карта?</h2>
+            <p class="desc">С целью обеспечения безопасности на дороге, а также исключения поломок и аварийных ситуаций
+                автомобиль, использующийся
+                для пассажироперевозок, должен регулярно предоставляться на техосмотр. Кроме того, перед каждым выходом
+                на линию
+                требуется контроль техсостояния машины лицензированным автомехаником с отметкой в путевом листе.</p>
+            <img class="first" src="./assets/osmotr3.jpg" alt="">
+            <img class="second" src="./assets/osmotr1.jpg" alt="">
+
+            <div class="Message Message--red">
+                <div class="Message-icon">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="Message-body">
+                    <p>штраф в случае отсутствия путевых листов:</p>
+                    <p>В зависимости от года выпуска автомобиля штраф может достигать от 5 000 руб до 10 000 руб</p>
+                    <a href="#product"><button class="Message-button" id="js-helpMe">Решить проблему!</button></a>
+                </div>
+                <!-- <button class="Message-close js-messageClose"><i class="fa fa-times"></i></button> -->
+            </div>
+        </div>
+    </section>
+    <!-- End of Process section -->
+
+    <!-- Product section -->
+    <section class="product-container" id="product">
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+            <img data-image="yellow" class="active" src="./assets/diagnos.jpg" alt="">
+        </div>
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Диагностическая карта</span>
+                <h1>Диагностическая карта водителя</h1>
+                <p>Содержит всю необходимую информацию о техсостоянии транспортного средства</p>
+            </div>
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+
+            </div>
+            <!-- Product Pricing -->
+            <div class="product-price">
+                <span>800 руб</span>
+                <a href="#" class="cart-btn">Добавить в корзину</a>
+            </div>
+        </div>
+    </section>
+    <!-- End of Product section -->
+
+    <!-- About sitimobil section -->
+    <section class="features-main my-2">
+        <div class="section-header">
+            <h1 class="section-heading"> Немного подробностей
+                об оклейке автомобиля
+            </h1>
+            <div class="underline"></div>
+        </div>
+        <div class="container grid grid-3">
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+            <div class="about-card flex">
+                <i class=""></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime repellat eos dicta officiis
+                    dolorum enim labore minima deserunt ipsum cumque minus sint impedit, qui fugiat rerum ut magni
+                    nostrum.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End of About sitimobil section -->
+
+    <!-- Contact section -->
+    <section class="contact">
+        <div class="wrapper-form">
+            <div class="contact-left">
+                <svg id="mySvg">
+                    <clippath id="clip">
+                        <circle cx="5" cy="5" r="80" class="a" />
+                    </clippath>
+
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" class="one" />
+
+                    <image preserveAspectRatio="xMidYMin slice" href="./assets/bcg.jpeg" clip-path="url(#clip)" />
+                </svg>
+            </div>
+            <div class="contact-right">
+                <h1 class="contact-heading">Свяжитесь с нами</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="field" id="name">
+                        <label for="name" class="input-label">Ваше Имя</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id="number">
+                        <label for="number" class="input-label">Ваш Телефон</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id="brand">
+                        <label for="brand" class="message">Марка и модель автомобиля</label>
+                    </div>
+                    <input type="submit" class="submit-btn" value="Отправить" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact section -->
+
+    <!-- Bot section -->
+    <div class="bot">
+        <p class="bot-text">
+            Либо, <br>
+            заходи <br>
+            в наш <br>
+            телеграм <br>
+            для большей <br>
+            информации <br>
+        </p>
+        <button>БОТ</button>
+        <img src="./assets/bot.jpg" alt="">
+    </div>
+    <!-- End of Bot section -->
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-wrap">
+            <p>Copyright &copy; 2021 </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer section -->
+
+    <button class="scroll-btn">
+        <h3>&#10595;</h3>
+    </button>
+</body>
+<script src="./libs/jquery.min.js"></script>
+<script src="./js/utility.js"></script>
+<script src="./js/okleika.js"></script>
+<script src="./js/predreisovii-osmotr.js"></script>
+
+</html>
