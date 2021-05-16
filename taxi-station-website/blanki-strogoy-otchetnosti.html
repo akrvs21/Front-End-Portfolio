@@ -5,13 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Открытие ИП</title>
+    <title>Ваше Сопровождение</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/ip.css">
+    <link rel="stylesheet" href="./css/sitimobil.css">
+    <link rel="stylesheet" href="./css/okleika.css">
+    <link rel="stylesheet" href="./css/predreisovii-osmotr.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/otkritie-pechati.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Fira+Sans+Extra+Condensed&family=Playfair+Display+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/soprovojdenie.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/okleika.css">
+    <link rel="stylesheet" href="./css/blanki.css">
+    <script src="https://kit.fontawesome.com/c7b8ec2e41.js" crossorigin="anonymous"></script>
+
 
     <style>
         .swal2-popup {
@@ -45,9 +58,10 @@
                     <ul class="dropdown">
                         <li><a href="./soprovojdenie.html">Сопроводительные документы</a></li>
                         <li><a href="./predreisovii-osmotr.html">Предрейсовый осмотр</a></li>
-                        <li><a href="./diagnos-karta.html">Диагностическая карта</a></li>
+                        <li><a class="not-finished" href="#">Диагностическая карта</a></li>
                         <li><a href="./otkritie-pechati.html">Изготовление печати для ИП</a></li>
-                        <li><a href="./blanki-strogoy-otchetnosti.html">Бланки строгой отчётности</a></li>
+
+                        <li><a class="not-finished" href="#">Бланки строгой отчётности</a></li>
                         <li><a class="not-finished" href="#">Карточка фрахтовщика</a></li>
                         <li><a class="not-finished" href="#">Правила перевозки</a></li>
                         <li><a class="not-finished" href="#">Договор аренды ТС</a></li>
@@ -59,16 +73,19 @@
                 </li>
             </ul>
         </div>
+        <!-- End of Navigator -->
     </section>
-    <!-- End of Navigator -->
 
     <!-- Hero section -->
     <section class="hero">
-        <div class="carousel">
-            <img style="opacity: 0.6;" src="./assets/ofis-pomeshenie.png" alt="">
-            <p class="title">Печать для ИП</p>
-            <p>изготовление индивидуальной печати для вашего ип</p>
-            <a href="#process"><button style="left: 38%;" id="free">Изготовить печать</button></a>
+        <div class="carousel hero-image" style="background-image: url('./assets/zapol.png'); opacity: 1;">
+            <!-- <img style="opacity: 0.6;" src="./assets/office.jpg" alt=""> -->
+            <p style="border-radius: 25px; width: 34%;" class="title">бланки</p>
+            <p
+                style="padding: 10px; top: 40%; background-color: rgba(255, 253, 251, 0.7); font-size: 4rem; border-radius: 25px; color: #000;">
+                строгой отчетности
+            </p>
+            <a href="#process"><button style="top: 58%;" id="free">НАЧНИ ЗДЕСЬ</button></a>
         </div>
     </section>
     <!-- End of Hero section -->
@@ -76,66 +93,53 @@
     <!-- Process section -->
     <section class="process" id="process">
         <div class="wrapper">
-            <h2>Для чего нужна печать?</h2>
-            <div class="process-items">
-                <div class="process-item">
-                    <img src="./assets/docs.gif" alt="">
-                    <p>При оформлении путевых листов</p>
+            <h2>Для чего нужны Бланки строгой отчетности?</h2>
+            <p class="desc">БСО для такси – официальный документ сопроводительного типа с определенным номером. Его
+                форма и заполнение должны
+                соответствовать действующему законодательству. Он заменяет кассовый чек и выступает подтверждением
+                передачи пассажиром
+                денег таксисту.
+            </p>
+            <img class="first" src="./assets/blank.png" alt="">
+            <img class="second" src="./assets/bso.png" alt="">
+
+            <div class="Message Message--red">
+                <div class="Message-icon">
+                    <i class="fa fa-times"></i>
                 </div>
-                <div class="process-item">
-                    <img src="./assets/form.png" alt="">
-                    <p>При заполнении бланков строгой отчетности</p>
+                <div class="Message-body">
+                    <p>штраф в случае отсутствия БСО:</p>
+                    <p>не менее 10 000 руб</p>
+                    <a href="#product"><button class="Message-button" id="js-helpMe">Решить проблему!</button></a>
                 </div>
-                <div class="process-item">
-                    <img src="./assets/bank-card.png" alt="">
-                    <p>Для открытия расчетного счета</p>
-                </div>
+                <!-- <button class="Message-close js-messageClose"><i class="fa fa-times"></i></button> -->
             </div>
         </div>
     </section>
     <!-- End of Process section -->
 
     <!-- Product section -->
-    <section class="product">
-        <div class="stamps">
-            <h3>изготовление печати для ИП</h3>
-            <p>Вы можете заказать печать для ИП прямо на нашем сайте.</p>
-            <div class="process-items" style="width: 100vw; margin-bottom: 50px;">
-                <div class="process-item">
-                    <p>Печать
-                        обычная</p>
-                    <img src="./assets/st1.png" alt="">
+    <section class="product-container" id="product">
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+            <img data-image="yellow" class="active" src="./assets/blank.png" alt="">
+        </div>
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Бланки строгой отчетности</span>
+                <h1>Бланки строгой отчетности</h1>
+                <p>Комплект содержит 10 шт. Ручное заполнение</p>
+            </div>
+            <!-- Product Configuration -->
+            <div class="product-configuration">
 
-                </div>
-                <div class="process-item">
-                    <p>Печать
-                        полуавтомат</p>
-                    <img src="./assets/st2.png" alt="">
-
-                </div>
-                <div class="process-item">
-                    <p>Печать
-                        карманная</p>
-                    <img src="./assets/st3.png" alt="">
-
-                </div>
-                <div class="process-item">
-                    <p>Печать
-                        автоматическая</p>
-                    <img src="./assets/st4.png" alt="">
-
-                </div>
-                <div class="process-item">
-                    <p>Штемпельная
-                        краска</p>
-                    <img src="./assets/st5.png" alt="">
-
-                </div>
-                <div class="process-item">
-                    <p>Штемпельная подушка</p>
-                    <img src="./assets/st6.png" alt="">
-
-                </div>
+            </div>
+            <!-- Product Pricing -->
+            <div class="product-price">
+                <span>200 руб</span>
+                <a href="#" class="cart-btn">Добавить в корзину</a>
             </div>
         </div>
     </section>
@@ -145,7 +149,7 @@
     <section class="features-main my-2">
         <div class="section-header">
             <h1 class="section-heading"> Немного подробностей
-                об открытии ИП
+                о бланках строгой отчетности
             </h1>
             <div class="underline"></div>
         </div>
@@ -195,11 +199,7 @@
         </div>
     </section>
     <!-- End of About sitimobil section -->
-    <div class="section-header">
-        <h1 class="section-heading"> Нужно проконсультироваться? Свяжитесь с нами
-        </h1>
-        <div class="underline"></div>
-    </div>
+
     <!-- Contact section -->
     <section class="contact">
         <div class="wrapper-form">
@@ -226,8 +226,8 @@
                         <label for="number" class="input-label">Ваш Телефон</label>
                     </div>
                     <div class="input-group">
-                        <textarea class="field" id="message" placeholder="Сообщение"></textarea>
-                        <label for="message" class="message"></label>
+                        <input type="text" class="field" id="brand">
+                        <label for="brand" class="message">Марка и модель автомобиля</label>
                     </div>
                     <input type="submit" class="submit-btn" value="Отправить" />
                 </form>
@@ -271,5 +271,7 @@
 </body>
 <script src="./libs/jquery.min.js"></script>
 <script src="./js/utility.js"></script>
+<script src="./js/okleika.js"></script>
+<script src="./js/predreisovii-osmotr.js"></script>
 
 </html>
