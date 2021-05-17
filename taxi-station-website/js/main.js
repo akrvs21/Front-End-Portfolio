@@ -12,6 +12,10 @@ $(document).ready(function () {
     pauseOnFocus: false,
     speed: 800,
   });
+  $(".menu").click(function () {
+    $(".topnav .navbar").toggleClass("active");
+    $(".logo").toggleClass("hide");
+  });
 });
 $(".js-tilt").tilt({
   scale: 1.2,
