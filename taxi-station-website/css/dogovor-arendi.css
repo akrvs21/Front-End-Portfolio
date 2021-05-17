@@ -1,0 +1,9 @@
+.left-column {
+  width: 58%;
+  position: relative;
+}
+.left-column img {
+  width: 30vw;
+  left: 100px;
+  border: solid;
+}

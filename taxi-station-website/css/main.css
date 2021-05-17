@@ -1120,7 +1120,7 @@ footer {
   width: 100%;
   z-index: 5;
   text-shadow: none;
-  left: 42%;
+  left: 54%;
   text-align: left;
   animation: flicker 3s linear infinite;
 }
