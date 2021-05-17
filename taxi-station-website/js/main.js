@@ -16,7 +16,14 @@ $(document).ready(function () {
     $(".topnav .navbar").toggleClass("active");
     $(".logo").toggleClass("hide");
   });
+  $(".navigation").click(function (e) {
+    console.log(
+      e.currentTarget.children[1].classList.toggle("active-dropdown")
+    );
+    // e.target.nextSibling.classList.toggle("active-dropdown");
+  });
 });
+
 $(".js-tilt").tilt({
   scale: 1.2,
 });

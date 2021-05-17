@@ -1283,6 +1283,7 @@ footer {
   .topnav .navbar {
     display: none;
     height: 100%;
+
     /* width: 100%; */
   }
   .navbar > li {
@@ -1302,5 +1303,14 @@ footer {
   }
   .hide {
     display: none;
+  }
+  .topnav .active-dropdown {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    z-index: 100;
+  }
+  .dropdown li {
+    padding: 9px;
   }
 }
