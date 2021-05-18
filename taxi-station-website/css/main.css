@@ -280,6 +280,7 @@ ul {
   /* align-items: stretch; */
   width: 1400px;
   height: 100%;
+  position: relative;
   /* max-width: 1600px; */
   margin: 15px auto;
   /* padding: 1.5rem; */
@@ -347,9 +348,9 @@ ul {
 
 .main-img {
   position: absolute;
-  top: 11%;
-  left: 130%;
-  width: 100%;
+  top: 29%;
+  left: 23%;
+  width: 20%;
   /* height: 150px; */
   border-radius: 35px;
   transition: transform 0.2s ease-in;
@@ -360,8 +361,8 @@ ul {
 }
 .block-reveal-cont {
   position: absolute;
-  top: 6%;
-  left: 270%;
+  top: 22%;
+  left: 44%;
   padding: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -403,11 +404,11 @@ ul {
 .docs-cont {
   position: absolute;
   width: 100%;
-  width: 475px;
+  width: 463px;
   display: flex;
   justify-content: space-evenly;
-  top: 10%;
-  left: 380%;
+  top: 17%;
+  left: 65%;
 }
 .docs-cont img {
   display: inline-block;
@@ -430,8 +431,8 @@ ul {
 .kolaj {
   transition: transform 0.3s ease-in;
   width: 520px;
-  top: 0;
-  left: 240%;
+  top: 38px;
+  left: 37%;
 }
 .kolaj:hover {
   transform: scale(1.2);
@@ -549,10 +550,10 @@ ul {
 .car-anim-container {
   position: absolute;
   z-index: 999;
-  top: -35px;
+  top: 19px;
   width: 500px;
   height: 300px;
-  left: 250%;
+  left: 40%;
   /* animation: carAnim 1s ease-in; */
 }
 
@@ -1201,8 +1202,8 @@ footer {
 .swipe-hint {
   margin: 50px;
   position: absolute;
-  top: -45px;
-  left: 260%;
+  top: 21px;
+  left: 48%;
   z-index: 9999;
 }
 .swipe-hint.swipe-horizontal {
