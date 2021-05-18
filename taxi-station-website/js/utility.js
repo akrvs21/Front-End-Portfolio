@@ -18,6 +18,14 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+$(".menu").click(function () {
+  $(".topnav .navbar").toggleClass("active");
+  $(".logo").toggleClass("hide");
+});
+$(".navigation").click(function (e) {
+  console.log(e.currentTarget.children[1].classList.toggle("active-dropdown"));
+  // e.target.nextSibling.classList.toggle("active-dropdown");
+});
 
 // Image hover effect animation
 $("#mySvg").on("mousemove", function (e) {

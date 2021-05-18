@@ -36,7 +36,9 @@ ul {
   margin: 0 4vw;
   padding: 2vh;
 }
-
+.the-bot {
+  display: none;
+}
 .topnav {
   background-color: #000;
   /* background: linear-gradient(
@@ -148,6 +150,10 @@ ul {
   color: rgba(255, 255, 255, 0.753);
   font-family: "Zen Dots", cursive;
   padding: 30px;
+}
+.hero-desc {
+  font-size: 1.5rem;
+  top: 55%;
 }
 .carousel {
   width: 100%;
@@ -275,7 +281,7 @@ ul {
   width: 1400px;
   height: 100%;
   /* max-width: 1600px; */
-  margin: 0 auto;
+  margin: 15px auto;
   /* padding: 1.5rem; */
   /* background-color: rgb(235, 225, 94); */
   background-color: rgb(235, 225, 94);
@@ -339,17 +345,17 @@ ul {
   font-size: 1.6rem;
 }
 
-.card .main-img {
+.main-img {
   position: absolute;
   top: 11%;
   left: 130%;
   width: 100%;
-  height: 150px;
+  /* height: 150px; */
   border-radius: 35px;
   transition: transform 0.2s ease-in;
   /* height: 70px; */
 }
-.card .main-img:hover {
+.main-img:hover {
   transform: translateY(-15px);
 }
 .block-reveal-cont {
@@ -423,6 +429,9 @@ ul {
 }
 .kolaj {
   transition: transform 0.3s ease-in;
+  width: 520px;
+  top: 0;
+  left: 240%;
 }
 .kolaj:hover {
   transform: scale(1.2);
@@ -1312,5 +1321,153 @@ footer {
   }
   .dropdown li {
     padding: 9px;
+  }
+  .hero-text {
+    top: 28%;
+    left: 60%;
+    font-size: 48px;
+  }
+  .hero-desc {
+    font-size: 1.3rem;
+    top: 49%;
+  }
+  .carousel {
+  }
+  .hero-image {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .service {
+    width: 90%;
+  }
+  .section-heading {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  .main-img {
+    position: static;
+    width: 100%;
+  }
+  .card {
+    width: 65%;
+    margin: 20px auto;
+  }
+  .row {
+    position: relative;
+    width: 375px;
+  }
+  .progress-item {
+    width: 90%;
+  }
+  .block-reveal-cont {
+    position: static;
+  }
+  .docs-cont {
+    position: static;
+    flex-direction: column;
+  }
+  .card:nth-of-type(1) {
+    margin-right: 18%;
+  }
+  .docs-cont {
+    margin: 0 auto;
+    width: 110px;
+  }
+  .swipe-hint.swipe-horizontal {
+    position: static;
+  }
+  .car-anim-container {
+    position: static;
+    width: 380px;
+    height: 240px;
+    margin-bottom: 20px;
+  }
+  .swipe-hint {
+    margin: 0;
+  }
+  .kolaj {
+    width: 390px;
+  }
+  .main-cars {
+    margin: 10px 0;
+  }
+  .team-members {
+    flex-direction: column;
+  }
+  .team-member {
+    margin: 34px;
+  }
+  .contact-left {
+    display: none;
+  }
+  .contact-right {
+    width: 100%;
+    padding-left: 14px;
+    padding: 0;
+  }
+  .wrapper-form {
+    width: 80%;
+    height: 57rem;
+  }
+  .input-group {
+    width: 83%;
+  }
+  .field {
+    width: 100%;
+  }
+  .contact-heading {
+    margin: 2rem 0;
+  }
+  .submit-btn {
+    width: 88%;
+  }
+  .input-group label {
+    font-size: 1.4rem;
+  }
+  .bot-text {
+    font-size: 3.5rem;
+    top: 54px;
+    left: 2%;
+  }
+  .bot {
+    height: 667px;
+  }
+  .bot img {
+    display: none;
+  }
+  .bot .the-bot {
+    display: block;
+    width: 164px;
+    top: 24%;
+    left: 18%;
+  }
+  .bot button {
+    top: 488px;
+    left: 8%;
+    font-size: 36px;
+    width: 13rem;
+    height: 8rem;
+  }
+  .footer-wrap p {
+    font-size: 1.6rem;
+  }
+  .footer-icons a {
+    /* margin: 0 18px; */
+  }
+  .swipe-hint.swipe-horizontal::before {
+    top: 336px;
+    right: 44px;
+    z-index: 0;
+  }
+  .footer-icons {
+    display: flex;
+  }
+  .footer-icons i {
+    margin: 0 2rem;
   }
 }
