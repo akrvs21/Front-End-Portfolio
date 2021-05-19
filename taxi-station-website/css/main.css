@@ -51,6 +51,7 @@ ul {
   z-index: 9999;
   top: 0px;
   transition: opacity 0.5s linear;
+  /* height: 10vh; */
 }
 .topnav:hover {
   opacity: 1;
@@ -1476,6 +1477,6 @@ footer {
   }
 
   .hero {
-    margin-top: 8vh;
+    margin-top: 0;
   }
 }
