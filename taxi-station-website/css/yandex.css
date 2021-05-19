@@ -1,0 +1,7 @@
+@media (max-width: 940px) {
+  .branding .process-item {
+    width: 179px;
+    height: 231px;
+    margin: 4px;
+  }
+}

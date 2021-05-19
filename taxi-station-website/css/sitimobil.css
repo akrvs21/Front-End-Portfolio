@@ -24,6 +24,10 @@
 }
 /* End of Hero section */
 
+.sitimobil {
+  width: 100vw;
+  height: auto;
+}
 /* Branding section */
 .car-wrapper img {
   width: 100%;
@@ -117,6 +121,83 @@
   .gallery-column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+@media (max-width: 940px) {
+  .right-car {
+    left: 196.5px;
+    top: 295px;
+    width: 529px;
+    position: absolute;
+    box-sizing: border-box;
+    display: table;
+  }
+  .left-car {
+    position: absolute;
+    left: -346.5px;
+    top: 297px;
+    width: 529px;
+    display: table;
+  }
+  .branding .process-items {
+    position: relative;
+    top: 40px;
+    left: 0;
+    flex-wrap: wrap;
+    height: 0;
+    flex-direction: row;
+    transform: translate(0, 0);
+  }
+  .branding .process-item {
+    width: 165px;
+    height: 190px;
+    margin: 8px;
+  }
+  .process-item img {
+    position: relative;
+    top: -5px;
+    left: 27%;
+    border-radius: 25px;
+  }
+  .process-items {
+    margin: -19px 0;
+  }
+  .wrapper img,
+  .product img,
+  .process-item img {
+    width: 48px;
+    height: 23%;
+  }
+  .branding h2 {
+    position: static;
+    transform: translate(0, 0);
+    font-size: 3rem;
+    text-align: center;
+    padding: 21px;
+  }
+  .branding h3 {
+    font-size: 1.3rem;
+    position: static;
+    transform: translate(0, 0);
+    text-align: center;
+    margin-top: 8px;
+  }
+  .process-items p {
+    padding: 0;
+    font-size: 1.8rem;
+  }
+  .branding span {
+    font-size: 1.4rem;
+  }
+
+  .yandex {
+    width: 74%;
+  }
+  .carousel p {
+    font-size: 2.5rem;
+  }
+  .carousel button#free {
+    top: 76%;
   }
 }
 /* End of Image gallery section */

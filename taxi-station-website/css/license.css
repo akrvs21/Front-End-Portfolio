@@ -220,7 +220,7 @@ table td.r,
 table th.r {
   text-align: center;
 }
-@media screen and (max-width: 35.5em) {
+/* @media screen and (max-width: 35.5em) {
   table {
     display: block;
   }
@@ -257,7 +257,7 @@ table th.r {
   table tbody tr td:nth-child(2):before {
     content: "Описание";
   }
-}
+} */
 
 .file-upload {
   background-color: rgb(17, 139, 209);
@@ -296,7 +296,44 @@ table th.r {
   top: 5px;
   left: -5px;
 } */
-
+@media (max-width: 940px) {
+  .carousel button#free {
+    left: 30%;
+    font-weight: 700;
+  }
+  .license-wrapper h2 {
+    text-align: center;
+  }
+  .process-item {
+    width: 70%;
+    margin: 17px;
+  }
+  .license img {
+    width: 70px;
+    left: 31px;
+    left: -12px;
+    top: -7px;
+  }
+  .color-box-mo {
+    width: 65px;
+    height: 65px;
+    top: -31px;
+  }
+  .license h1 {
+    top: 20px;
+    left: -5px;
+  }
+  .contact-right {
+    height: 92vh;
+  }
+  .file-upload {
+    margin: 1rem;
+    font-size: 1.1rem;
+  }
+  .submit-btn {
+    margin-top: 0.5rem;
+  }
+}
 @keyframes ripple {
   from {
     opacity: 1;
