@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^17.0.0",
     "smoothscroll-polyfill": "^0.4.4",
     "sweetalert2": "^10.16.6"
   }

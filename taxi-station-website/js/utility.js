@@ -1,7 +1,8 @@
 // Make opaicty low while scrolling and high when hovering
-import smoothscroll from "smoothscroll-polyfill";
+// import smoothscroll from "smoothscroll-polyfill";
+// const smoothscroll = require("../smoothscroll-polyfill");
 // kick off the polyfill!
-smoothscroll.polyfill();
+// smoothscroll.polyfill();
 var navbar = document.querySelector(".topnav");
 var paint = false;
 window.onscroll = function () {
