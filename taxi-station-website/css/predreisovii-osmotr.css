@@ -11,6 +11,18 @@
   top: 150px;
   transform: rotate(-25deg);
 }
+.predreis {
+  border-radius: 25px;
+  width: 28%;
+}
+.predreis + p {
+  padding: 10px;
+  top: 40%;
+  background-color: rgba(255, 253, 251, 0.7);
+  font-size: 4rem;
+  border-radius: 25px;
+  color: #000;
+}
 .wrapper .second {
   width: 250px;
   height: 150px;
@@ -144,4 +156,54 @@
 }
 .product-price {
   margin-top: 12rem;
+}
+
+@media (max-width: 940px) {
+  .predreis + p {
+    font-size: 2.4rem;
+  }
+  .carousel button#free {
+    left: 18%;
+  }
+  .wrapper .second {
+    width: 150px;
+    height: 116px;
+    border-radius: 50px;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 292px;
+    transform: rotate(0);
+  }
+  .wrapper .first {
+    width: 150px;
+    height: 116px;
+    padding: 20px;
+    position: absolute;
+    border-radius: 50px;
+    left: 0px;
+    top: 292px;
+    transform: rotate(0);
+  }
+  .Message {
+    width: 100%;
+  }
+  .Message-body p:first-child {
+    text-align: start;
+  }
+  .left-column img.active {
+    display: none;
+  }
+  .product-price {
+    margin-top: 0;
+  }
+  .product-container {
+    height: 63vh;
+  }
+  .left-column {
+    display: none;
+  }
+  .product-description h1 {
+    font-size: 38px;
+  }
 }

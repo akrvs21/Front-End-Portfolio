@@ -1,0 +1,25 @@
+.kartochka {
+  border-radius: 25px;
+  width: 34%;
+}
+.kartochka + p {
+  padding: 10px;
+  top: 40%;
+  background-color: rgba(255, 253, 251, 0.7);
+  font-size: 4rem;
+  border-radius: 25px;
+  color: #000;
+}
+.karta-btn {
+  top: 58%;
+}
+
+@media (max-width: 940px) {
+  .kartochka + p {
+    font-size: 2.5rem;
+  }
+  .carousel button#free {
+    top: 62%;
+    left: 16%;
+  }
+}

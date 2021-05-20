@@ -1,3 +1,22 @@
 .product {
   margin-top: 60px;
 }
+.pechat {
+  left: 38%;
+}
+@media (max-width: 940px) {
+  .carousel button#free {
+    top: 70%;
+    left: 9%;
+    font-size: 1.7rem;
+  }
+  .process-item {
+    width: 77%;
+  }
+  .process-item img {
+    left: 25%;
+  }
+  .wrapper h2 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+.diagnos {
+  border-radius: 25px;
+  width: 34%;
+}
+.diagnos + p {
+  padding: 10px;
+  top: 40%;
+  background-color: rgba(255, 253, 251, 0.7);
+  font-size: 4rem;
+  border-radius: 25px;
+  color: #000;
+}
+
+@media (max-width: 940px) {
+  .carousel .title {
+    font-size: 2.5rem;
+  }
+  .diagnos + p {
+    font-size: 2.3rem;
+  }
+  .wrapper .first,
+  .wrapper .second {
+    top: 445px;
+  }
+  .Message {
+    top: 60px;
+  }
+  .product-container {
+    height: 53vh;
+  }
+}

@@ -241,7 +241,9 @@
     flex-direction: column;
     margin-top: 60px;
   }
-
+  .product-description h1 {
+    font-size: 49px;
+  }
   .left-column,
   .right-column {
     width: 100%;

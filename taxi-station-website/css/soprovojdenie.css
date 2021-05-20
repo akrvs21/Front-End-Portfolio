@@ -8,6 +8,17 @@
 .soprovojdenie p {
   font-size: 1.8rem;
 }
+.sopr {
+  border-radius: 25px;
+  width: 28%;
+}
+.sopr + p {
+  top: 40%;
+  background-color: rgba(255, 253, 251, 0.7);
+  font-size: 4rem;
+  border-radius: 25px;
+  color: #000;
+}
 
 :root {
   --clr-blue: #4361ff;
@@ -81,5 +92,32 @@
 @media screen and (max-width: 500px) {
   .column-break {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .sopr + p {
+    font-size: 2.6rem;
+  }
+  .wrapper img,
+  .product img,
+  .process-item img {
+    width: 99px;
+    height: 63%;
+  }
+  .soprovojdenie {
+    margin: 0 0 20px 0;
+  }
+  .wrapper p,
+  .process-items p {
+    margin-bottom: 26px;
+  }
+  .process-item img {
+    left: 23%;
+  }
+  .process-items p {
+    margin-bottom: 0;
+  }
+  .carousel button#free {
+    left: 18%;
   }
 }

@@ -42,7 +42,7 @@ document.querySelectorAll(".not-finished").forEach((item) => {
     console.log("sweet");
     const el = document.createElement("div");
     el.innerHTML =
-      "Ссылка на <a style='color: rgb(29, 104, 226); font-weight: bold;' href='./index.html'>Контакты</a>";
+      "Ссылка на <a style='color: rgb(29, 104, 226); font-weight: bold;' href='./contacts.html'>Контакты</a>";
     Swal.fire({
       title: "Пожалуйста подождите",
       text: "Вы можете перейти в Контакты чтобы связаться с нами.",
