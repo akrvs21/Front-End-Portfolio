@@ -10,13 +10,14 @@
   border-radius: 25px;
   color: #000;
 }
-.karta-btn {
+.carousel button#free {
   top: 58%;
 }
 
 @media (max-width: 940px) {
   .kartochka + p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    margin-top: 19px;
   }
   .carousel button#free {
     top: 62%;
