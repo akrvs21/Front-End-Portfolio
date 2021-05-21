@@ -1,5 +1,5 @@
 // Make opaicty low while scrolling and high when hovering
-// import smoothscroll from "smoothscroll-polyfill";
+// import { smoothscroll } from "smoothscroll-polyfill";
 // const smoothscroll = require("../smoothscroll-polyfill");
 // kick off the polyfill!
 // smoothscroll.polyfill();
@@ -17,11 +17,6 @@ navbar.onmouseout = function () {
   if (window.pageYOffset) navbar.style.opacity = "0.5";
 };
 
-document.querySelector(".scroll-btn").addEventListener("click", () => {
-  console.log("cick");
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-});
 $(".menu").click(function () {
   $(".topnav .navbar").toggleClass("active");
   $(".logo").toggleClass("hide");
@@ -59,3 +54,30 @@ document.querySelectorAll(".not-finished").forEach((item) => {
     });
   });
 });
+
+document.querySelector(".scroll-btn").addEventListener("click", () => {
+  console.log("cick");
+  // document.body.scrollTop = 0; // For Safari
+  // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  const scrollButton = document.querySelector(".topnav");
+  console.log(scrollButton.parentElement);
+
+  SmoothVerticalScrolling(scrollButton.parentElement, 250, "top");
+});
+/////////////////////////////////////////////////////////////////
+function SmoothVerticalScrolling(e, time, where) {
+  var eTop = e.getBoundingClientRect().top;
+  console.log("eTop is ");
+  console.log(eTop);
+  var eAmt = eTop;
+  var curTime = 0;
+  while (curTime <= time) {
+    window.setTimeout(SVS_B, curTime, eAmt, where);
+    curTime += time / 100;
+  }
+}
+
+function SVS_B(eAmt, where) {
+  if (where == "center" || where == "") window.scrollBy(0, eAmt / 2);
+  if (where == "top") window.scrollBy(0, eAmt);
+}

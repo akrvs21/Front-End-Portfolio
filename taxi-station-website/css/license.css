@@ -277,7 +277,10 @@ table th.r {
   font-size: 1.1rem;
   font-family: sans-serif;
 }
-
+.carousel button#free {
+  top: 63%;
+  left: 44%;
+}
 /* .request-loader {
   position: relative;
   display: flex;
