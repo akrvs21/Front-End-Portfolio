@@ -1,1 +1,1 @@
-[Check this DEMO](https://raider2107.github.io/Front-End-Portfolio/hosting-platform/)
+[Check this DEMO](https://akrvs21.github.io/Front-End-Portfolio/hosting-platform/)
