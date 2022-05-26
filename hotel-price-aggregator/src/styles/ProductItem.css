@@ -1,0 +1,21 @@
+.outter-container {
+  margin: 70px 50px;
+  float: right;
+}
+
+.inner-container {
+  width: 80%;
+  height: 244px;
+  display: flex;
+  border: 2px solid gray;
+  padding: 20px;
+  margin: auto;
+}
+
+.productImage {
+  flex: 0 0 auto;
+}
+
+.product-info {
+  flex: 1 1 auto;
+}

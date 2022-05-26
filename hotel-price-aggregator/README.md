@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About the project
+
+This application lets users to:
+
+1. Get hotel information nearby.
+2. Search for hotels in specific area.
+3. Save to "Favorite" the specific hotel.
+4. Get direction on a map to the specific hotel.
+
 ## Available Scripts
 
 In the project directory, you can run:
