@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Libre+Baskerville&family=Oxygen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Libre+Baskerville&family=Oxygen&display=swap");
 
 .outter-container {
   clear: both;
@@ -48,7 +48,7 @@
 .ratings {
   word-break: break-all;
   padding: 10px;
-  background-color: #1478DD;
+  background-color: #1478dd;
   width: 42px;
   height: 45px;
   border-radius: 10px;
@@ -61,12 +61,12 @@
 .ratings_word {
   margin-right: 16px;
   font-size: large;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .room_price {
   font-size: 18px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
 .room_price b {
@@ -74,7 +74,7 @@
   font-size: 22px;
 }
 
-.rating_container{
+.rating_container {
   align-self: flex-end;
   position: absolute;
 }
@@ -86,10 +86,19 @@
 
 .room-types {
   margin: 20px 0px 0px 40px;
-  color: #34495E;
+  color: #34495e;
 }
 
 .room-types b {
   margin-top: 20px;
-  color: #F42C15;
+  color: #f42c15;
+}
+
+.new_merch {
+  font-size: 14px;
+  background-color: orange;
+  padding: 5px;
+  color: #042080;
+  letter-spacing: 0.2px;
+  border-radius: 5px;
 }

@@ -46,93 +46,99 @@ const ProductItem = () => {
       });
   };
 
-  // useEffect(() => {
-  //   getCurrentLocation().then((currentLocation) => {
-  //     console.log("Current city ", currentLocation.city);
-  //     const options = {
-  //       method: "GET",
-  //       url: "https://booking-com.p.rapidapi.com/v1/hotels/locations",
-  //       params: { locale: "en-gb", name: currentLocation.city },
-  //       headers: {
-  //         "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
-  //         "X-RapidAPI-Key":
-  //           "abe14f8690msh4951ba020fe401ap16f079jsn85bcb63f2398",
-  //       },
-  //     };
-  //     axios
-  //       .request(options)
-  //       .then(function (response) {
-  //         console.log(response.data);
-  //         let destId = response.data[0].dest_id;
-  //         let destType = response.data[0].dest_type;
-  //         const destInfo = { destId, destType };
-  //         getHotelsInLocation(destInfo);
-  //       })
-  //       .catch(function (error) {
-  //         console.error(error);
-  //       });
-  //   });
-  // }, []);
+  useEffect(() => {
+    getCurrentLocation().then((currentLocation) => {
+      console.log("Current city ", currentLocation.city);
+      const options = {
+        method: "GET",
+        url: "https://booking-com.p.rapidapi.com/v1/hotels/locations",
+        params: { locale: "en-gb", name: currentLocation.city },
+        headers: {
+          "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
+          "X-RapidAPI-Key":
+            "abe14f8690msh4951ba020fe401ap16f079jsn85bcb63f2398",
+        },
+      };
+      axios
+        .request(options)
+        .then(function (response) {
+          console.log(response.data);
+          let destId = response.data[0].dest_id;
+          let destType = response.data[0].dest_type;
+          const destInfo = { destId, destType };
+          getHotelsInLocation(destInfo);
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
+    });
+  }, []);
 
   // Render component
   return (
     <>
-      <div className="outter-container">
-        <div className="inner-container">
-          <img src={logo} className="productImage" width="200" height="200" />
-          <div className="product-info">
-            <h1>Hayatt Regency</h1>
-            <div className="rating_container">
-              <span className="ratings_word">Very good</span>
-              <span className="ratings">8.8</span>
-            </div>
-            <h4>
-              Khuseynzoda Street 36A, Dushanbe, Tajikistan{" "}
-              <span>‎(3.5 km from centre)‬</span>
-            </h4>
+      {hotelList.map((hotel) => (
+        <div className="outter-container" key={hotel.hotel_id}>
+          <div className="inner-container">
+            <img
+              src={hotel.max_photo_url}
+              className="productImage"
+              width="200"
+              height="200"
+            />
+            <div className="product-info">
+              <h1>{hotel.hotel_name}</h1>
+              <div className="rating_container">
+                {hotel.review_score ? (
+                  <>
+                    <span className="ratings_word">
+                      {hotel.review_score_word}
+                    </span>
+                    <span className="ratings">{hotel.review_score}</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="new_merch">New to Looking.com</span>
+                  </>
+                )}
+              </div>
+              <h4>
+                {hotel.address +
+                  ", " +
+                  hotel.city_name_en +
+                  ", " +
+                  hotel.country_trans}
+                <span>‎&nbsp; ({hotel.distances[0].text})‬</span>
+              </h4>
 
-            <div className="room-types">
-              <span>
-                Deluxe Double Room with Shower
-                <br />
-                <b>Private room</b>: 1 bed
+              <div className="room-types">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: hotel.unit_configuration_label,
+                  }}
+                ></span>
+              </div>
+              <div className="price_container">
+                <span className="room_price">
+                  Starts from: &nbsp;
+                  <b>
+                    {hotel.composite_price_breakdown.all_inclusive_amount.value}{" "}
+                    &nbsp;{" "}
+                    {
+                      hotel.composite_price_breakdown.all_inclusive_amount
+                        .currency
+                    }
+                  </b>
+                </span>
+              </div>
+              <span style={{ marginLeft: 20 }}>
+                &nbsp; &nbsp; &nbsp; Check on map ?
               </span>
             </div>
-
-            <div className="price_container">
-              <span className="room_price">
-                Starts from: &nbsp;<b>37.5 USD</b>
-              </span>
-            </div>
-            <span style={{ marginLeft: 20 }}>
-              &nbsp; &nbsp; &nbsp; Check on map ?
-            </span>
           </div>
         </div>
-      </div>
+      ))}
     </>
-    // <>
-    //   {hotelList.map((hotel) => (
-    //     <div className="outter-container" key={hotel.hotel_id}>
-    //       <div className="inner-container">
-    //         <img
-    //           src={hotel.max_photo_url}
-    //           className="productImage"
-    //           width="200"
-    //           height="200"
-    //         />
-    //         <div className="product-info">
-    //           <h1>{hotel.hotel_name}</h1>
-    //           <h3>{hotel.address, hotel.city, hotel.country_trans}</h3>
-    //           <span>hotel.distances[0].text</span>
-    //           <span>hotel.composite_price_breakdown.all_inclusive_amount.value + ' ' + hotel.composite_price_breakdown.all_inclusive_amount.currency</span>
-    //           <span>{hotel.unit_configuration_label}</span>
-    //           <span>Ratings: {hotel.review_score, hotel.review_score_word} </span>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </>
   );
 };
 
