@@ -46,33 +46,33 @@ const ProductItem = () => {
       });
   };
 
-  useEffect(() => {
-    getCurrentLocation().then((currentLocation) => {
-      console.log("Current city ", currentLocation.city);
-      const options = {
-        method: "GET",
-        url: "https://booking-com.p.rapidapi.com/v1/hotels/locations",
-        params: { locale: "en-gb", name: currentLocation.city },
-        headers: {
-          "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
-          "X-RapidAPI-Key":
-            "abe14f8690msh4951ba020fe401ap16f079jsn85bcb63f2398",
-        },
-      };
-      axios
-        .request(options)
-        .then(function (response) {
-          console.log(response.data);
-          let destId = response.data[0].dest_id;
-          let destType = response.data[0].dest_type;
-          const destInfo = { destId, destType };
-          getHotelsInLocation(destInfo);
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
-    });
-  }, []);
+  // useEffect(() => {
+  //   getCurrentLocation().then((currentLocation) => {
+  //     console.log("Current city ", currentLocation.city);
+  //     const options = {
+  //       method: "GET",
+  //       url: "https://booking-com.p.rapidapi.com/v1/hotels/locations",
+  //       params: { locale: "en-gb", name: currentLocation.city },
+  //       headers: {
+  //         "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
+  //         "X-RapidAPI-Key":
+  //           "abe14f8690msh4951ba020fe401ap16f079jsn85bcb63f2398",
+  //       },
+  //     };
+  //     axios
+  //       .request(options)
+  //       .then(function (response) {
+  //         console.log(response.data);
+  //         let destId = response.data[0].dest_id;
+  //         let destType = response.data[0].dest_type;
+  //         const destInfo = { destId, destType };
+  //         getHotelsInLocation(destInfo);
+  //       })
+  //       .catch(function (error) {
+  //         console.error(error);
+  //       });
+  //   });
+  // }, []);
 
   // Render component
   return (
