@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: blue;
+  text-decoration: none; /* no underline */
+}
 .App {
   /* text-align: center; */
   height: 100vh;

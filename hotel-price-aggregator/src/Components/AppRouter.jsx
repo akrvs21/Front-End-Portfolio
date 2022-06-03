@@ -1,15 +1,15 @@
 import React from "react";
-import Map from "../pages/Map";
-import ProductItem from "./ProductItem";
+import MapContainer from "../pages/MapContainer";
 import { Route, Routes, Navigate } from "react-router-dom";
+import ProductList from "../pages/ProductList";
 
 const AppRouter = () => {
-  return (
+  return ( 
     <div>
       <Routes>
-        <Route path="/hotels" element={<ProductItem />} />
-        <Route path="/map" element={<Map />} />
-        <Route path="*" element={<Navigate to="/posts" replace />} />
+        <Route path="/hotels" element={<ProductList />} />
+        <Route path="/map" element={<MapContainer />} />
+        <Route path="*" element={<Navigate to="/hotels" replace />} />
       </Routes>
     </div>
   );
