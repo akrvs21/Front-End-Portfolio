@@ -50,7 +50,9 @@ const ProductItem = ({ hotel }) => {
               <span className="room_price">
                 Starts from: &nbsp;
                 <b>
-                  {hotel.composite_price_breakdown.all_inclusive_amount.value}{" "}
+                  {
+                    Math.ceil(hotel.composite_price_breakdown.all_inclusive_amount.value)
+                  }{""}
                   &nbsp;{" "}
                   {
                     hotel.composite_price_breakdown.all_inclusive_amount
@@ -60,7 +62,12 @@ const ProductItem = ({ hotel }) => {
               </span>
             </div>
             <span style={{ marginLeft: 20 }}>
-              <Link to="/map" state={{from: hotel.latitude + "," + hotel.longitude}} >&nbsp; &nbsp; &nbsp; Check on map ?</Link>
+              <Link
+                to="/map"
+                state={{ from: hotel.latitude + "," + hotel.longitude }}
+              >
+                &nbsp; &nbsp; &nbsp; Check location on map
+              </Link>
             </span>
           </div>
         </div>

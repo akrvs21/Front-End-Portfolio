@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/App.css";
 import MyButton from "../MyButton/MyButton";
 import MyInput from "../MyInput/MyInput";
 import MyList from "../MyList/MyList";
 
-const MySearchBar = () => {
+const MySearchBar = ({ getHotelsInLocation }) => {
+  const [userInput, setuserInput] = useState("");
+
   return (
     <div className="search-field">
-      <MyInput />
-      <MyButton />
+      <MyInput setuserInput={setuserInput} getHotelsInLocation={getHotelsInLocation} />
+      <MyButton getHotelsInLocation={getHotelsInLocation} userInput={userInput} />
       <MyList />
     </div>
   );

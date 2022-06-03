@@ -87,16 +87,12 @@ const ProductList = () => {
           });
       });
     }
-
-    // return () => {
-
-    // };
   }, []);
 
   return (
     <>
       <MyNavbar />
-      <MySearchBar />
+      <MySearchBar getHotelsInLocation={getHotelsInLocation} />
       {hotelList.map((hotel) => (
         <ProductItem key={hotel.hotel_id} hotel={hotel} />
       ))}

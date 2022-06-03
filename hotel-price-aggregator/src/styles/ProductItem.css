@@ -3,14 +3,14 @@
 
 .outter-container {
   clear: both;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 .inner-container {
   width: 70%;
   box-shadow: 1px 2px 3px 4px rgba(12, 12, 12, 0.2);
   border-radius: 10px;
-  height: 244px;
+  height: 260px;
   display: flex;
   padding: 20px;
   margin: auto;
@@ -30,6 +30,7 @@
   color: #1486eb;
   align-self: flex-start;
   margin-left: 40px;
+  width: 80%;
 }
 
 .product-info h4 {
@@ -85,7 +86,7 @@
 }
 
 .room-types {
-  margin: 20px 0px 0px 40px;
+  margin: 0px 0px 0px 40px;
   color: #34495e;
 }
 

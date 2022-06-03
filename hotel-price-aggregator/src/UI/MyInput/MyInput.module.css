@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300&display=swap');
 .myInput {
     width: 620px;
     min-width: 320px;
@@ -5,4 +6,10 @@
     padding: 10px;
     float: left;
     border: 1px solid #000 ;
+    font-family: 'Spectral', serif;
+    transition: background-color .3s ease-in-out;
+}
+
+.myInput[type=text]:focus {
+    background-color: #FCDA86;
 }

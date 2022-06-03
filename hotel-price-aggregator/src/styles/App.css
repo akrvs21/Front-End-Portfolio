@@ -13,8 +13,10 @@ a {
 }
 
 .favorite {
+  margin: 62px 0px 0px 20px;
   float: right;
   --star-color: orange;
+  cursor: pointer;
   /* margin: 1em auto; */
   font-size: 21px;
   position: relative;
@@ -28,14 +30,19 @@ a {
 }
 .favorite-container p {
   float: right;
-  font-size: 24px;
+  cursor: pointer;
+  font-size: 26px;
   line-height: 16px;
-  margin-left: 8px;
+  margin: 62px 160px 0px 20px;
+}
+.favorite-container img {
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: -80px;
+  height: 335px;
 }
 .favorite-container {
   float: right;
-  margin: 30px 160px 10px;
-  cursor: pointer;
   width: 100%;
 }
 .favorite:before {
@@ -67,7 +74,6 @@ a {
 
 .search-field {
   width: 100%;
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   float: right;

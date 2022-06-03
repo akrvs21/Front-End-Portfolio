@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import cl from "./MyInput.module.css";
 
-const MyInput = () => {
-  const [userInput, setuserInput] = useState("");
+const MyInput = ({ setuserInput, getHotelsInLocation }) => {
   return (
     <div>
       <input
