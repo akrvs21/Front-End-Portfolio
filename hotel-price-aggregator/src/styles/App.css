@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
 a {
   color: blue;
   text-decoration: none; /* no underline */

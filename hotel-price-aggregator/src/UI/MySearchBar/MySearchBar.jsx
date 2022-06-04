@@ -4,13 +4,13 @@ import MyButton from "../MyButton/MyButton";
 import MyInput from "../MyInput/MyInput";
 import MyList from "../MyList/MyList";
 
-const MySearchBar = ({ getHotelsInLocation }) => {
+const MySearchBar = ({ getHotelsInLocation, setIsLoading, setCurrentPage }) => {
   const [userInput, setuserInput] = useState("");
 
   return (
     <div className="search-field">
       <MyInput setuserInput={setuserInput} getHotelsInLocation={getHotelsInLocation} />
-      <MyButton getHotelsInLocation={getHotelsInLocation} userInput={userInput} />
+      <MyButton setCurrentPage={setCurrentPage} setIsLoading={setIsLoading} getHotelsInLocation={getHotelsInLocation} userInput={userInput} />
       <MyList />
     </div>
   );

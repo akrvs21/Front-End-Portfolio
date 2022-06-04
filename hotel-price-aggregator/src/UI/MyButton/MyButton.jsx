@@ -2,15 +2,22 @@ import React from "react";
 import cl from "./MyButton.module.css";
 import axios from "axios";
 
-const MyButton = ({ userInput, getHotelsInLocation }) => {
+const MyButton = ({
+  userInput,
+  getHotelsInLocation,
+  setIsLoading,
+  setCurrentPage,
+}) => {
   const searchLocation = (location) => {
+    setCurrentPage(1);
+    setIsLoading(true);
     const options = {
       method: "GET",
       url: "https://booking-com.p.rapidapi.com/v1/hotels/locations",
       params: { locale: "en-gb", name: location },
       headers: {
         "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
-        "X-RapidAPI-Key": "3e9a81d54bmsha56fd7ae542935ep14f5c5jsnc4d9aafcf35b",
+        "X-RapidAPI-Key": "2768401f33msh7cb5aec92e19be8p11aab2jsncfd464be8c10",
       },
     };
 

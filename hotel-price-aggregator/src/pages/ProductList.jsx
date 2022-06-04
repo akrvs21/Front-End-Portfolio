@@ -4,9 +4,14 @@ import MyNavbar from "../UI/MyNavbar/MyNavbar";
 import MySearchBar from "../UI/MySearchBar/MySearchBar";
 
 import axios from "axios";
+import MyLoader from "../UI/Loader/MyLoader";
+import Pagination from "../UI/Pagination/Pagination";
 
 const ProductList = () => {
   const [hotelList, setHotelList] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(5);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Get user location by IP
   const getCurrentLocation = () => {
@@ -17,6 +22,7 @@ const ProductList = () => {
 
   // Get list of hotels in specific location
   const getHotelsInLocation = (destInfo) => {
+    setHotelList([]);
     console.log("destInfo is: ", destInfo);
     const options = {
       method: "GET",
@@ -35,13 +41,14 @@ const ProductList = () => {
       },
       headers: {
         "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
-        "X-RapidAPI-Key": "3e9a81d54bmsha56fd7ae542935ep14f5c5jsnc4d9aafcf35b",
+        "X-RapidAPI-Key": "2768401f33msh7cb5aec92e19be8p11aab2jsncfd464be8c10",
       },
     };
     axios
       .request(options)
       .then(function (response) {
         console.log(response.data.result);
+        setIsLoading(false);
         setHotelList(response.data.result);
         sessionStorage.setItem(
           "hotelList",
@@ -70,7 +77,7 @@ const ProductList = () => {
           headers: {
             "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
             "X-RapidAPI-Key":
-              "3e9a81d54bmsha56fd7ae542935ep14f5c5jsnc4d9aafcf35b",
+              "2768401f33msh7cb5aec92e19be8p11aab2jsncfd464be8c10",
           },
         };
         axios
@@ -89,13 +96,50 @@ const ProductList = () => {
     }
   }, []);
 
+  const indexOfLastItem = currentPage * postPerPage;
+  const indexOfFirstItem = indexOfLastItem - postPerPage;
+  const currentPosts = hotelList.slice(indexOfFirstItem, indexOfLastItem);
+  console.log(indexOfLastItem, indexOfFirstItem, currentPosts);
+
+  const scrollToTop = () => {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, c - c / 8);
+    }
+  };
+
+  const paginate = (pageNumber) => {
+    scrollToTop();
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <>
       <MyNavbar />
-      <MySearchBar getHotelsInLocation={getHotelsInLocation} />
-      {hotelList.map((hotel) => (
-        <ProductItem key={hotel.hotel_id} hotel={hotel} />
-      ))}
+      <MySearchBar
+        setCurrentPage={setCurrentPage}
+        setIsLoading={setIsLoading}
+        getHotelsInLocation={getHotelsInLocation}
+      />
+
+      {isLoading ? (
+        <div
+          style={{ display: "flex", justifyContent: "center", clear: "both" }}
+        >
+          <MyLoader />
+        </div>
+      ) : (
+        currentPosts.map((hotel) => (
+          <ProductItem key={hotel.hotel_id} hotel={hotel} />
+        ))
+      )}
+      <Pagination
+        postPerPage={postPerPage}
+        totalPost={hotelList.length}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
     </>
   );
 };
