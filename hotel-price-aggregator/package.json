@@ -2,7 +2,7 @@
   "name": "hotel-price-aggregator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://akrvs21.github.io/Front-End-Portfolio/hotel-price-aggregator/",
+  "homepage": "https://akrvs21.github.io/hotel-price-aggregator/",
   "dependencies": {
     "@react-google-maps/api": "^2.11.8",
     "@testing-library/jest-dom": "^5.16.4",
