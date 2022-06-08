@@ -2,16 +2,17 @@ import React, { useState, useEffect, useMemo } from "react";
 import ProductItem from "../Components/ProductItem";
 import MyNavbar from "../UI/MyNavbar/MyNavbar";
 import MySearchBar from "../UI/MySearchBar/MySearchBar";
-
 import axios from "axios";
 import MyLoader from "../UI/Loader/MyLoader";
 import Pagination from "../UI/Pagination/Pagination";
+import MyModal from "../UI/MyModal/MyModal";
 
 const ProductList = () => {
   const [hotelList, setHotelList] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(5);
   const [isLoading, setIsLoading] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   const [currentLocation, setCurrentLocation] = useState("");
 
   // Get user location by IP
@@ -119,13 +120,18 @@ const ProductList = () => {
 
   return (
     <>
-      <MyNavbar />
+      <MyModal
+        currentPosts={currentPosts}
+        setIsActive={setIsActive}
+        isActive={isActive}
+      />
+      <MyNavbar isActive={isActive} setIsActive={setIsActive} />
       <MySearchBar
         setCurrentPage={setCurrentPage}
         setIsLoading={setIsLoading}
         getHotelsInLocation={getHotelsInLocation}
       />
-      <span>Current location: {currentLocation}</span>
+      {/* <span>Current location: {currentLocation}</span> */}
       {isLoading ? (
         <div
           style={{ display: "flex", justifyContent: "center", clear: "both" }}
