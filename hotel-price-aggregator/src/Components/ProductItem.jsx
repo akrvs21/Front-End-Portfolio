@@ -14,8 +14,6 @@ const ProductItem = ({ hotel }) => {
           <img
             src={hotel.max_photo_url}
             className="productImage"
-            width="200"
-            height="200"
           />
           <div className="product-info">
             <h1>{hotel.hotel_name}</h1>
@@ -71,7 +69,7 @@ const ProductItem = ({ hotel }) => {
                 </b>
               </span>
             </div>
-            <span style={{ marginLeft: 20 }}>
+            <span className="mapLink" style={{ marginLeft: 20 }}>
               <Link
                 to="/map"
                 state={{ from: hotel.latitude + "," + hotel.longitude }}
