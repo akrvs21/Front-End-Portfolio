@@ -1,3 +1,5 @@
+[Check this DEMO](https://akrvs21.github.io/hotel-price-aggregator/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
