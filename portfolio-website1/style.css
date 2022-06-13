@@ -662,6 +662,10 @@ p {
   #projects .all-projects .project-image {
     /* height: 100%; */
   }
+
+  #projects .all-projects .project-item:nth-child(2) {
+    height: 730px;
+  }
   /* End of Projects */
 
   /* ABout section */
@@ -813,5 +817,8 @@ p {
   }
   #services .service-bottom {
     margin-top: 25px;
+  }
+  #projects .project-item {
+    height: 100%;
   }
 }
