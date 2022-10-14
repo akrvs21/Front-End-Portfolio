@@ -42,8 +42,8 @@ const ProductList = () => {
         room_number: 1,
       },
       headers: {
-        "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
-        "X-RapidAPI-Key": "2768401f33msh7cb5aec92e19be8p11aab2jsncfd464be8c10",
+        "X-RapidAPI-Host": "apidojo-booking-v1.p.rapidapi.com",
+        "X-RapidAPI-Key": "669adbc59cmshee8696b85c930d7p19b069jsnd6f56922cfe8",
       },
     };
     axios
@@ -79,9 +79,9 @@ const ProductList = () => {
           url: "https://booking-com.p.rapidapi.com/v1/hotels/locations",
           params: { locale: "en-gb", name: currentLocation.city },
           headers: {
-            "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
+            "X-RapidAPI-Host": "apidojo-booking-v1.p.rapidapi.com",
             "X-RapidAPI-Key":
-              "2768401f33msh7cb5aec92e19be8p11aab2jsncfd464be8c10",
+              "669adbc59cmshee8696b85c930d7p19b069jsnd6f56922cfe8",
           },
         };
         axios

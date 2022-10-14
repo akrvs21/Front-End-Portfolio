@@ -16,8 +16,8 @@ const MyButton = ({
       url: "https://booking-com.p.rapidapi.com/v1/hotels/locations",
       params: { locale: "en-gb", name: location },
       headers: {
-        "X-RapidAPI-Host": "booking-com.p.rapidapi.com",
-        "X-RapidAPI-Key": "2768401f33msh7cb5aec92e19be8p11aab2jsncfd464be8c10",
+        "X-RapidAPI-Host": "apidojo-booking-v1.p.rapidapi.com",
+        "X-RapidAPI-Key": "669adbc59cmshee8696b85c930d7p19b069jsnd6f56922cfe8",
       },
     };
 
